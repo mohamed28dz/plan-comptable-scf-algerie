@@ -79,6 +79,7 @@ Les contributions sont les bienvenues ! Si vous souhaitez corriger une erreur, a
 
 📄 Licence
 
-Ce projet est sous licence [Insérez le type de licence ici, ex: MIT]. Veuillez consulter le fichier LICENSE pour plus de détails.
+Ce projet est sous licence MIT. 
+Veuillez consulter le fichier LICENSE pour plus de détails.
 
 
