@@ -1,0 +1,642 @@
+# ============================================================
+# PLAN COMPTABLE SCF ALGÉRIEN
+# Système Comptable Financier — Loi 07-11 du 25 Novembre 2007
+# Arrêté du 26 juillet 2008 — Nomenclature
+# Version bilingue FR / AR
+# ============================================================
+
+metadata:
+  titre: "Plan Comptable SCF Algérien"
+  reference_legale: "Loi 07-11 du 25 Novembre 2007 — Arrêté du 26 juillet 2008"
+  autorite: "Conseil National de la Comptabilité (CNC) — Ministère des Finances"
+  devise: "Dinar Algérien (DA)"
+  version: "1.00"
+  date: "2026.10.04"
+  auteur:
+    nom: "Mohamed El Amine Tiour"
+    email: "Mohamedtiour@gmail.com"
+    mobile: "0661521479"
+
+classes:
+  # ==========================================================
+  # CLASSE 1 — COMPTES DE CAPITAUX
+  # ==========================================================
+  - code: 1
+    titre: "Comptes de capitaux"
+    titre_ar: "حسابات رؤوس الأموال"
+    comptes:
+      - code: 10
+        libelle: "Capital, réserves et assimilées"
+        label_ar: "رأس المال، الاحتياطات وما يماثلها"
+        sous_comptes:
+          - {code: 101, libelle: "Capital émis", label_ar: "رأس المال الاجتماعي الصادر"}
+          - {code: 1011, libelle: "Capital souscrit non appelé", label_ar: "رأس المال المكتتب غير المطلوب"}
+          - {code: 1012, libelle: "Capital souscrit appelé, non versé", label_ar: "رأس المال المطلوب غير المدفوع"}
+          - {code: 1013, libelle: "Capital souscrit, appelé, versé", label_ar: "رأس المال المكتتب المدفوع"}
+          - {code: 104, libelle: "Primes liées au capital social", label_ar: "علاوات الإصدار والاندماج"}
+          - {code: 105, libelle: "Écarts de réévaluation", label_ar: "فروق إعادة تقييم الأصول"}
+          - {code: 106, libelle: "Réserves", label_ar: "الاحتياطات"}
+          - {code: 1061, libelle: "Réserve légale", label_ar: "الاحتياطي القانوني"}
+          - {code: 1063, libelle: "Réserves statutaires ou contractuelles", label_ar: "احتياطيات النظام الأساسي"}
+          - {code: 1068, libelle: "Autres réserves", label_ar: "احتياطيات أخرى"}
+          - {code: 108, libelle: "Compte de l'exploitant", label_ar: "حساب المستغل"}
+          - {code: 109, libelle: "Capital souscrit non appelé", label_ar: "رأس المال المكتتب غير المطلوب"}
+      - code: 11
+        libelle: "Report à nouveau"
+        label_ar: "الترحيل من جديد"
+        sous_comptes:
+          - {code: 110, libelle: "Report à nouveau créditeur", label_ar: "الترحيل الدائن"}
+          - {code: 119, libelle: "Report à nouveau débiteur", label_ar: "الترحيل المدين"}
+      - code: 12
+        libelle: "Résultat de l'exercice"
+        label_ar: "نتيجة السنة المالية"
+        sous_comptes: []
+      - code: 13
+        libelle: "Produits et charges différés - hors cycle d'exploitation"
+        label_ar: "المنتوجات والأعباء المؤجلة"
+        sous_comptes:
+          - {code: 130, libelle: "Produits différés liés aux subventions d'investissement", label_ar: "منتجات مؤجلة مرتبطة بإعانات الاستثمار"}
+          - {code: 131, libelle: "Subventions d'équipement", label_ar: "إعانات التجهيز"}
+          - {code: 132, libelle: "Autres subventions d'investissements", label_ar: "إعانات أخرى للاستثمار"}
+          - {code: 133, libelle: "Impôts différés actif", label_ar: "الضرائب المؤجلة على الأصول"}
+          - {code: 134, libelle: "Impôts différés passif", label_ar: "الضرائب المؤجلة على الخصوم"}
+          - {code: 138, libelle: "Autres produits et charges différés", label_ar: "منتجات وأعباء أخرى مؤجلة"}
+      - code: 14
+        libelle: "(Disponible)"
+        label_ar: "(متاح)"
+        disponible: true
+        sous_comptes: []
+      - code: 15
+        libelle: "Provisions pour charges - passifs non courants"
+        label_ar: "المؤونات للأعباء - الخصوم غير الجارية"
+        sous_comptes:
+          - {code: 151, libelle: "Provisions pour garanties données aux clients", label_ar: "مؤونات ضمانات الزبائن"}
+          - {code: 153, libelle: "Provisions pour pensions et obligations similaires", label_ar: "مؤونات التقاعد والمنافع المشابهة"}
+          - {code: 155, libelle: "Provisions pour impôts", label_ar: "مؤونات الضرائب"}
+          - {code: 156, libelle: "Provisions pour renouvellement des immobilisations", label_ar: "مؤونات تجديد التثبيتات"}
+          - {code: 158, libelle: "Autres provisions pour charges - passifs non courants", label_ar: "مؤونات أخرى للأعباء"}
+      - code: 16
+        libelle: "Emprunts et dettes assimilés"
+        label_ar: "الاقتراضات والديون المماثلة"
+        sous_comptes:
+          - {code: 161, libelle: "Titres participatifs", label_ar: "السندات التساهمية"}
+          - {code: 162, libelle: "Emprunts obligataires convertibles", label_ar: "الاقتراضات السندية القابلة للتحويل"}
+          - {code: 163, libelle: "Autres emprunts obligataires", label_ar: "الاقتراضات السندية الأخرى"}
+          - {code: 164, libelle: "Emprunts auprès des établissements de crédit", label_ar: "الاقتراضات لدى مؤسسات القرض"}
+          - {code: 165, libelle: "Dépôts et cautionnements reçus", label_ar: "الودائع والكفالات المقبوضة"}
+          - {code: 167, libelle: "Dettes rattachées à des participations", label_ar: "الديون المرتبطة بالمساهمات"}
+          - {code: 168, libelle: "Autres emprunts et dettes assimilées", label_ar: "اقتراضات أخرى وديون مماثلة"}
+          - {code: 169, libelle: "Primes de remboursement des obligations", label_ar: "علاوات تسديد السندات"}
+      - code: 17
+        libelle: "Dettes rattachées à des participations"
+        label_ar: "الديون المرتبطة بالمساهمات"
+        sous_comptes:
+          - {code: 171, libelle: "Dettes rattachées à des participations groupe", label_ar: "الديون المرتبطة بمساهمات المجمع"}
+          - {code: 172, libelle: "Dettes rattachées à des participations hors groupe", label_ar: "الديون المرتبطة بمساهمات خارج المجمع"}
+          - {code: 173, libelle: "Dettes rattachées à des sociétés en participation", label_ar: "الديون المرتبطة بشركات في شكل مساهمة"}
+          - {code: 178, libelle: "Autres dettes rattachées à des participations", label_ar: "الديون الأخرى المرتبطة بمساهمات"}
+      - code: 18
+        libelle: "Comptes de liaison des établissements et sociétés en participation"
+        label_ar: "حسابات الارتباط"
+        sous_comptes:
+          - {code: 181, libelle: "Comptes de liaison entre établissements", label_ar: "حسابات الارتباط بين مؤسسات"}
+          - {code: 188, libelle: "Comptes de liaison entre sociétés en participation", label_ar: "حسابات الارتباط بين شركات في شكل مساهمة"}
+      - code: 19
+        libelle: "(Disponible)"
+        label_ar: "(متاح)"
+        disponible: true
+        sous_comptes: []
+
+  # ==========================================================
+  # CLASSE 2 — COMPTES D'IMMOBILISATIONS
+  # ==========================================================
+  - code: 2
+    titre: "Comptes d'immobilisations"
+    titre_ar: "حسابات التثبيتات"
+    comptes:
+      - code: 20
+        libelle: "Immobilisations incorporelles"
+        label_ar: "التثبيتات المعنوية"
+        sous_comptes:
+          - {code: 203, libelle: "Frais de développement immobilisables", label_ar: "مصاريف التنمية القابلة للتثبيت"}
+          - {code: 204, libelle: "Logiciels informatiques et assimilés", label_ar: "برمجيات المعلوماتية"}
+          - {code: 205, libelle: "Concessions et droits similaires, brevets, licences, marques", label_ar: "الامتيازات والحقوق المماثلة والبراءات والرخص"}
+          - {code: 207, libelle: "Écart d'acquisition", label_ar: "فارق الاقتناء"}
+          - {code: 208, libelle: "Autres immobilisations incorporelles", label_ar: "التثبيتات المعنوية الأخرى"}
+      - code: 21
+        libelle: "Immobilisations corporelles"
+        label_ar: "التثبيتات العينية"
+        sous_comptes:
+          - {code: 211, libelle: "Terrains", label_ar: "الأراضي"}
+          - {code: 212, libelle: "Agencements et aménagements de terrains", label_ar: "تهيئة الأراضي"}
+          - {code: 213, libelle: "Constructions", label_ar: "البناءات"}
+          - {code: 215, libelle: "Installations techniques, matériel et outillage industriels", label_ar: "المنشآت التقنية والمعدات"}
+          - {code: 218, libelle: "Autres immobilisations corporelles", label_ar: "التثبيتات العينية الأخرى"}
+      - code: 22
+        libelle: "Immobilisations en concession"
+        label_ar: "التثبيتات في شكل امتياز"
+        sous_comptes:
+          - {code: 221, libelle: "Terrains en concession", label_ar: "الأراضي الممنوح امتيازها"}
+          - {code: 222, libelle: "Agencements et aménagements de terrain en concession", label_ar: "تهيئة الأراضي الممنوح امتيازها"}
+          - {code: 223, libelle: "Constructions en concession", label_ar: "البناءات الممنوح امتيازها"}
+          - {code: 225, libelle: "Installations techniques en concession", label_ar: "المنشآت التقنية الممنوح امتيازها"}
+          - {code: 228, libelle: "Autres immobilisations corporelles en concession", label_ar: "التثبيتات الأخرى الممنوح امتيازها"}
+          - {code: 229, libelle: "Droits du concédant", label_ar: "حقوق مانح الامتياز"}
+      - code: 23
+        libelle: "Immobilisations en cours"
+        label_ar: "التثبيتات الجاري إنجازها"
+        sous_comptes:
+          - {code: 232, libelle: "Immobilisations corporelles en cours", label_ar: "التثبيتات العينية الجاري إنجازها"}
+          - {code: 237, libelle: "Immobilisations incorporelles en cours", label_ar: "التثبيتات المعنوية الجاري إنجازها"}
+          - {code: 238, libelle: "Avances et acomptes versés sur commandes d'immobilisations", label_ar: "التسبيقات على طلبات التثبيتات"}
+      - code: 24
+        libelle: "(Disponible)"
+        label_ar: "(متاح)"
+        disponible: true
+        sous_comptes: []
+      - code: 25
+        libelle: "(Disponible)"
+        label_ar: "(متاح)"
+        disponible: true
+        sous_comptes: []
+      - code: 26
+        libelle: "Participations et créances rattachées à des participations"
+        label_ar: "مساهمات وحسابات دائنة ملحقة"
+        sous_comptes:
+          - {code: 261, libelle: "Titres de filiales", label_ar: "سندات الفروع المنتسبة"}
+          - {code: 262, libelle: "Autres titres de participation", label_ar: "سندات المساهمة الأخرى"}
+          - {code: 265, libelle: "Titres mis en équivalence", label_ar: "سندات المساهمة المقيّمة بطريقة المكافئ"}
+          - {code: 266, libelle: "Créances rattachées à des participations groupe", label_ar: "الحسابات الدائنة الملحقة بمساهمات المجمع"}
+          - {code: 267, libelle: "Créances rattachées à des participations hors groupe", label_ar: "الحسابات الدائنة الملحقة بمساهمات خارج المجمع"}
+          - {code: 268, libelle: "Créances rattachées à des sociétés en participation", label_ar: "الحسابات الدائنة الملحقة بشركات في حالة مساهمة"}
+          - {code: 269, libelle: "Versements restant à effectuer sur titres de participation non libérés", label_ar: "عمليات الدفع الباقية عن سندات مساهمة"}
+      - code: 27
+        libelle: "Autres immobilisations financières"
+        label_ar: "تثبيتات مالية أخرى"
+        sous_comptes:
+          - {code: 271, libelle: "Titres de participation / titres immobilisés", label_ar: "سندات المساهمة والسندات المثبتة"}
+          - {code: 272, libelle: "Titres représentatifs de droit de créance (obligations, bons)", label_ar: "السندات الممثلة لحق الدين"}
+          - {code: 273, libelle: "Titres immobilisés de l'activité de portefeuille", label_ar: "السندات المثبتة التابعة لنشاط الحافظة"}
+          - {code: 274, libelle: "Prêts", label_ar: "قروض ممنوحة"}
+          - {code: 275, libelle: "Dépôts et cautionnements versés", label_ar: "ودائع وكفالات مدفوعة"}
+          - {code: 276, libelle: "Autres créances immobilisées", label_ar: "الحسابات الدائنة الأخرى المثبتة"}
+          - {code: 279, libelle: "Versements restant à effectuer sur titres immobilisés non libérés", label_ar: "ما بقي من عمليات الدفع عن السندات المثبتة"}
+      - code: 28
+        libelle: "Amortissement des immobilisations"
+        label_ar: "اهتلاك التثبيتات"
+        sous_comptes:
+          - {code: 280, libelle: "Amortissements des immobilisations incorporelles", label_ar: "اهتلاكات الأصول المعنوية"}
+          - {code: 2803, libelle: "Amortissement des frais de recherche et développement immobilisables", label_ar: "اهتلاك مصاريف البحث والتنمية"}
+          - {code: 2804, libelle: "Amortissement des logiciels informatiques et assimilés", label_ar: "اهتلاك برمجيات المعلوماتية"}
+          - {code: 2805, libelle: "Amortissement concessions et droits similaires, brevets, licences, marques", label_ar: "اهتلاك الامتيازات والبراءات"}
+          - {code: 2807, libelle: "Amortissement écart d'acquisition", label_ar: "اهتلاك فارق الاقتناء"}
+          - {code: 2808, libelle: "Amortissement autres immobilisations incorporelles", label_ar: "اهتلاك التثبيتات المعنوية الأخرى"}
+          - {code: 281, libelle: "Amortissements des immobilisations corporelles", label_ar: "اهتلاكات الأصول المادية"}
+          - {code: 2812, libelle: "Amortissement agencements et aménagements de terrain", label_ar: "اهتلاك تهيئة الأراضي"}
+          - {code: 2813, libelle: "Amortissement constructions", label_ar: "اهتلاك البناءات"}
+          - {code: 2815, libelle: "Amortissement installations techniques", label_ar: "اهتلاك المنشآت التقنية"}
+          - {code: 2818, libelle: "Amortissement autres immobilisations corporelles", label_ar: "اهتلاك التثبيتات العينية الأخرى"}
+          - {code: 282, libelle: "Amortissement des immobilisations mises en concession", label_ar: "اهتلاك التثبيتات الموضوعة موضع امتياز"}
+      - code: 29
+        libelle: "Pertes de valeur sur immobilisations"
+        label_ar: "خسائر القيمة عن التثبيتات"
+        sous_comptes:
+          - {code: 290, libelle: "Pertes de valeur sur immobilisations incorporelles", label_ar: "خسائر القيمة عن التثبيتات المعنوية"}
+          - {code: 2903, libelle: "Pertes de valeur sur frais de recherche et développement immobilisables", label_ar: "خسائر القيمة عن مصاريف البحث والتنمية"}
+          - {code: 2904, libelle: "Pertes de valeur sur logiciels informatiques et assimilés", label_ar: "خسائر القيمة عن البرمجيات"}
+          - {code: 2905, libelle: "Pertes de valeur sur concessions et droits similaires, brevets, licences, marques", label_ar: "خسائر القيمة عن الامتيازات"}
+          - {code: 2907, libelle: "Pertes de valeur sur écart d'acquisition", label_ar: "خسائر القيمة عن فارق الشراء"}
+          - {code: 2908, libelle: "Pertes de valeur sur autres immobilisations incorporelles", label_ar: "خسائر القيمة عن التثبيتات المعنوية الأخرى"}
+          - {code: 291, libelle: "Pertes de valeur sur immobilisations corporelles", label_ar: "خسائر القيمة عن التثبيتات العينية"}
+          - {code: 2912, libelle: "Pertes de valeur sur agencements et aménagements de terrain", label_ar: "خسائر القيمة عن تهيئة الأراضي"}
+          - {code: 2913, libelle: "Pertes de valeur sur constructions", label_ar: "خسائر القيمة عن البناءات"}
+          - {code: 2915, libelle: "Pertes de valeur sur installations techniques", label_ar: "خسائر القيمة عن المنشآت التقنية"}
+          - {code: 2918, libelle: "Pertes de valeur sur autres immobilisations corporelles", label_ar: "خسائر القيمة عن التثبيتات العينية الأخرى"}
+          - {code: 292, libelle: "Pertes de valeur sur immobilisations mises en concession", label_ar: "خسائر القيمة عن التثبيتات الموضوعة موضع امتياز"}
+          - {code: 293, libelle: "Pertes de valeur sur immobilisations en cours", label_ar: "خسائر القيمة عن التثبيتات الجاري إنجازها"}
+          - {code: 296, libelle: "Pertes de valeur sur participations et créances rattachées à participations", label_ar: "خسائر القيمة عن المساهمات"}
+          - {code: 297, libelle: "Pertes de valeur sur autres titres immobilisés", label_ar: "خسائر القيمة عن السندات الأخرى المثبتة"}
+          - {code: 298, libelle: "Pertes de valeur sur autres actifs financiers immobilisés", label_ar: "خسائر القيمة عن الأصول المالية الأخرى"}
+
+  # ==========================================================
+  # CLASSE 3 — COMPTES DE STOCKS ET ENCOURS
+  # ==========================================================
+  - code: 3
+    titre: "Comptes de stocks et en-cours"
+    titre_ar: "حسابات المخزونات والمنتوجات قيد التنفيذ"
+    comptes:
+      - code: 30
+        libelle: "Stocks de marchandises"
+        label_ar: "مخزونات البضائع"
+        sous_comptes: []
+      - code: 31
+        libelle: "Matières premières et fournitures"
+        label_ar: "المواد الأولية واللوازم"
+        sous_comptes: []
+      - code: 32
+        libelle: "Autres approvisionnements"
+        label_ar: "تموينات أخرى"
+        sous_comptes:
+          - {code: 321, libelle: "Matières consommables", label_ar: "المواد القابلة للاستهلاك"}
+          - {code: 322, libelle: "Fournitures consommables", label_ar: "اللوازم القابلة للاستهلاك"}
+          - {code: 326, libelle: "Emballages", label_ar: "التغليفات"}
+      - code: 33
+        libelle: "En cours de production de biens"
+        label_ar: "سلع قيد الإنتاج"
+        sous_comptes:
+          - {code: 331, libelle: "Produits en cours", label_ar: "المنتجات الجاري إنجازها"}
+          - {code: 335, libelle: "Travaux en cours", label_ar: "الأشغال الجاري إنجازها"}
+      - code: 34
+        libelle: "En cours de production de services"
+        label_ar: "خدمات قيد الإنتاج"
+        sous_comptes:
+          - {code: 341, libelle: "Études en cours", label_ar: "الدراسات الجاري إنجازها"}
+          - {code: 345, libelle: "Prestations de services en cours", label_ar: "الخدمات الجاري تقديمها"}
+      - code: 35
+        libelle: "Stocks de produits"
+        label_ar: "مخزونات المنتجات"
+        sous_comptes:
+          - {code: 351, libelle: "Produits intermédiaires", label_ar: "المنتجات الوسيطة"}
+          - {code: 355, libelle: "Produits finis", label_ar: "المنتجات المصنعة"}
+          - {code: 358, libelle: "Produits résiduels ou matières de récupération", label_ar: "المنتجات المتبقية والمواد المسترجعة"}
+      - code: 36
+        libelle: "Stocks provenant d'immobilisations"
+        label_ar: "المخزونات المتأتية من التثبيتات"
+        sous_comptes: []
+      - code: 37
+        libelle: "Stocks à l'extérieur"
+        label_ar: "المخزونات في الخارج"
+        sous_comptes: []
+      - code: 38
+        libelle: "Achats stockés"
+        label_ar: "المشتريات المخزنة"
+        sous_comptes:
+          - {code: 380, libelle: "Marchandises stockées", label_ar: "البضائع المخزنة"}
+          - {code: 381, libelle: "Matières premières et fournitures stockées", label_ar: "المواد الأولية واللوازم المخزنة"}
+          - {code: 382, libelle: "Autres approvisionnements stockés", label_ar: "التموينات الأخرى المخزنة"}
+      - code: 39
+        libelle: "Pertes de valeur sur stocks et en-cours"
+        label_ar: "خسائر القيمة عن المخزونات"
+        sous_comptes:
+          - {code: 390, libelle: "Pertes de valeur sur stocks de marchandises", label_ar: "خسائر القيمة عن مخزونات البضائع"}
+          - {code: 391, libelle: "Pertes de valeur sur matières premières et fournitures", label_ar: "خسائر القيمة عن المواد الأولية"}
+          - {code: 392, libelle: "Pertes de valeur sur autres approvisionnements", label_ar: "خسائر القيمة عن التموينات الأخرى"}
+          - {code: 393, libelle: "Pertes de valeur sur en-cours de production de biens", label_ar: "خسائر القيمة عن إنتاج السلع"}
+          - {code: 394, libelle: "Pertes de valeur sur en-cours de production de services", label_ar: "خسائر القيمة عن إنتاج الخدمات"}
+          - {code: 395, libelle: "Pertes de valeur sur stocks de produits", label_ar: "خسائر القيمة عن المخزونات من المنتجات"}
+          - {code: 397, libelle: "Pertes de valeur sur stocks à l'extérieur", label_ar: "خسائر القيمة عن المخزونات الخارجية"}
+
+  # ==========================================================
+  # CLASSE 4 — COMPTES DE TIERS
+  # ==========================================================
+  - code: 4
+    titre: "Comptes de tiers"
+    titre_ar: "حسابات الغير"
+    comptes:
+      - code: 40
+        libelle: "Fournisseurs et comptes rattachés"
+        label_ar: "الموردون والحسابات الملحقة"
+        sous_comptes:
+          - {code: 401, libelle: "Fournisseurs de stocks et services", label_ar: "موردو المخزونات والخدمات"}
+          - {code: 403, libelle: "Fournisseurs, effets à payer", label_ar: "موردو السندات الواجب دفعها"}
+          - {code: 404, libelle: "Fournisseurs d'immobilisations", label_ar: "موردو التثبيتات"}
+          - {code: 405, libelle: "Fournisseurs d'immobilisations, effets à payer", label_ar: "موردو تثبيتات السندات"}
+          - {code: 408, libelle: "Fournisseurs, factures non parvenues", label_ar: "موردو الفواتير غير الواصلة"}
+          - {code: 409, libelle: "Fournisseurs débiteurs", label_ar: "الموردون المدينون"}
+      - code: 41
+        libelle: "Clients et comptes rattachés"
+        label_ar: "الزبائن والحسابات الملحقة"
+        sous_comptes:
+          - {code: 411, libelle: "Clients", label_ar: "الزبائن"}
+          - {code: 413, libelle: "Clients, effets à recevoir", label_ar: "الزبائن والسندات المطلوب تحصيلها"}
+          - {code: 416, libelle: "Clients douteux", label_ar: "الزبائن المشكوك فيهم"}
+          - {code: 417, libelle: "Créances sur travaux ou prestations en cours", label_ar: "الحسابات الدائنة عن أشغال جار إنجازها"}
+          - {code: 418, libelle: "Clients - produits non encore facturés", label_ar: "الزبائن - منتجات لم تعد فواتيرها"}
+          - {code: 419, libelle: "Clients créditeurs, avances reçues, RRR à accorder et autres avoirs à établir", label_ar: "الزبائن الدائنون"}
+      - code: 42
+        libelle: "Personnel et comptes rattachés"
+        label_ar: "المستخدمون والحسابات الملحقة"
+        sous_comptes:
+          - {code: 421, libelle: "Personnel, rémunérations dues", label_ar: "المستخدمون - الأجور المستحقة"}
+          - {code: 422, libelle: "Fonds des œuvres sociales", label_ar: "أموال الخدمات الاجتماعية"}
+          - {code: 423, libelle: "Participation des salariés au résultat", label_ar: "مساهمة الأجراء في النتيجة"}
+          - {code: 425, libelle: "Personnel, avances et acomptes accordés", label_ar: "المستخدمون - التسبيقات"}
+          - {code: 426, libelle: "Personnel, dépôts reçus", label_ar: "المستخدمون - الودائع"}
+          - {code: 427, libelle: "Personnel, oppositions sur salaires", label_ar: "المستخدمون - الاعتراضات"}
+          - {code: 428, libelle: "Personnel, charges à payer et produits à recevoir", label_ar: "المستخدمون - الأعباء والمنتوجات"}
+      - code: 43
+        libelle: "Organismes sociaux et comptes rattachés"
+        label_ar: "الهيئات الاجتماعية والحسابات الملحقة"
+        sous_comptes:
+          - {code: 431, libelle: "Sécurité sociale", label_ar: "الضمان الاجتماعي"}
+          - {code: 432, libelle: "Autres organismes sociaux", label_ar: "الهيئات الاجتماعية الأخرى"}
+          - {code: 437, libelle: "Autres organismes sociaux", label_ar: "هيئات اجتماعية أخرى"}
+          - {code: 438, libelle: "Organismes sociaux, charges à payer et produits à recevoir", label_ar: "الهيئات الاجتماعية - الأعباء والمنتوجات"}
+      - code: 44
+        libelle: "État, collectivités publiques, organismes internationaux et comptes rattachés"
+        label_ar: "الدولة، الجماعات العمومية، الهيئات الدولية"
+        sous_comptes:
+          - {code: 441, libelle: "État et autres collectivités publiques, subventions à recevoir", label_ar: "الدولة - الإعانات المطلوب استلامها"}
+          - {code: 442, libelle: "État, impôts et taxes recouvrables sur des tiers", label_ar: "الدولة - الضرائب القابلة للتحصيل"}
+          - {code: 443, libelle: "Opérations particulières avec l'État et les collectivités publiques", label_ar: "العمليات الخاصة مع الدولة"}
+          - {code: 444, libelle: "État, impôts sur les résultats", label_ar: "الدولة - الضرائب على النتائج"}
+          - {code: 445, libelle: "État, taxes sur le chiffre d'affaires", label_ar: "الدولة - الرسوم على رقم الأعمال"}
+          - {code: 4456, libelle: "TVA collectée / TVA déductible", label_ar: "الرسم على القيمة المضافة المحصلة والقابلة للخصم"}
+          - {code: 446, libelle: "Organismes internationaux", label_ar: "الهيئات الدولية"}
+          - {code: 447, libelle: "Autres impôts, taxes et versements assimilés", label_ar: "الضرائب والرسوم الأخرى"}
+          - {code: 448, libelle: "État, charges à payer et produits à recevoir", label_ar: "الدولة - الأعباء والمنتوجات"}
+      - code: 45
+        libelle: "Groupe et associés"
+        label_ar: "المجمع والشركاء"
+        sous_comptes:
+          - {code: 451, libelle: "Opérations groupe", label_ar: "عمليات المجمع"}
+          - {code: 455, libelle: "Associés, comptes courants", label_ar: "الشركاء - الحسابات الجارية"}
+          - {code: 456, libelle: "Associés, opérations sur le capital", label_ar: "الشركاء - العمليات عن رأس المال"}
+          - {code: 457, libelle: "Associés, dividendes à payer", label_ar: "الشركاء - أرباح الأسهم"}
+          - {code: 458, libelle: "Associés, opérations faites en commun ou en groupement", label_ar: "الشركاء - العمليات المشتركة"}
+      - code: 46
+        libelle: "Débiteurs divers et créditeurs divers"
+        label_ar: "مختلف الدائنين ومختلف المدينين"
+        sous_comptes:
+          - {code: 462, libelle: "Créances sur cessions d'immobilisations", label_ar: "الحسابات الدائنة عن التنازل عن تثبيتات"}
+          - {code: 464, libelle: "Dettes sur acquisitions de valeurs mobilières de placement et instruments financiers dérivés", label_ar: "الديون عن اقتناء قيم منقولة"}
+          - {code: 465, libelle: "Créances sur cessions de valeurs mobilières de placement et instruments financiers dérivés", label_ar: "الحسابات الدائنة عن التنازل عن قيم منقولة"}
+          - {code: 467, libelle: "Autres comptes débiteurs ou créditeurs", label_ar: "الحسابات الأخرى الدائنة أو المدينة"}
+          - {code: 468, libelle: "Diverses charges à payer et produits à recevoir", label_ar: "الأعباء والمنتوجات المتنوعة"}
+      - code: 47
+        libelle: "Comptes transitoires ou d'attente"
+        label_ar: "الحسابات الانتقالية أو الانتظارية"
+        sous_comptes: []
+      - code: 48
+        libelle: "Charges ou produits constatés d'avance et provisions"
+        label_ar: "الأعباء أو المنتوجات المعاينة مسبقا"
+        sous_comptes:
+          - {code: 481, libelle: "Provisions, passifs courants", label_ar: "المؤونات - الخصوم الجارية"}
+          - {code: 486, libelle: "Charges constatées d'avance", label_ar: "الأعباء المعاينة مسبقا"}
+          - {code: 487, libelle: "Produits constatés d'avance", label_ar: "المنتوجات المعاينة مسبقا"}
+      - code: 49
+        libelle: "Pertes de valeur sur comptes de tiers"
+        label_ar: "خسائر القيمة عن حسابات الغير"
+        sous_comptes:
+          - {code: 491, libelle: "Pertes de valeur sur comptes de clients", label_ar: "خسائر القيمة عن حسابات الزبائن"}
+          - {code: 495, libelle: "Pertes de valeur sur comptes du groupe et sur associés", label_ar: "خسائر القيمة عن حسابات المجمع"}
+          - {code: 496, libelle: "Pertes de valeur sur comptes de débiteurs divers", label_ar: "خسائر القيمة عن حسابات مدينين"}
+          - {code: 498, libelle: "Pertes de valeur sur autres comptes de tiers", label_ar: "خسائر القيمة عن حسابات أخرى"}
+
+  # ==========================================================
+  # CLASSE 5 — COMPTES FINANCIERS
+  # ==========================================================
+  - code: 5
+    titre: "Comptes financiers"
+    titre_ar: "الحسابات المالية"
+    comptes:
+      - code: 50
+        libelle: "Valeurs mobilières de placement"
+        label_ar: "القيم المنقولة للتوظيف"
+        sous_comptes:
+          - {code: 501, libelle: "Part dans des entreprises liées", label_ar: "الحصص في المؤسسات المرتبطة"}
+          - {code: 502, libelle: "Actions propres", label_ar: "الأسهم الخاصة"}
+          - {code: 503, libelle: "Autres actions ou titres conférant un droit de propriété", label_ar: "الأسهم الأخرى"}
+          - {code: 506, libelle: "Obligations, bons du Trésor et bons de caisse à court terme", label_ar: "السندات وقسائم الخزينة"}
+          - {code: 508, libelle: "Autres valeurs mobilières de placement et créances assimilées", label_ar: "قيم التوظيف المنقولة الأخرى"}
+          - {code: 509, libelle: "Versements restant à effectuer sur valeurs mobilières de placement non libérées", label_ar: "التسديدات الباقية عن قيم التوظيف"}
+      - code: 51
+        libelle: "Banques, établissements financiers et assimilés"
+        label_ar: "البنوك والمؤسسات المالية"
+        sous_comptes:
+          - {code: 511, libelle: "Valeurs à l'encaissement", label_ar: "قيم التحصيل"}
+          - {code: 512, libelle: "Banques, comptes courants", label_ar: "بنوك، الحسابات الجارية"}
+          - {code: 514, libelle: "Chèques postaux (CCP)", label_ar: "الحساب الجاري البريدي"}
+          - {code: 515, libelle: "Trésor public et établissements publics", label_ar: "الخزينة العمومية والمؤسسات العمومية"}
+          - {code: 517, libelle: "Autres organismes financiers", label_ar: "الهيئات المالية الأخرى"}
+          - {code: 518, libelle: "Intérêts courus", label_ar: "الفوائد المنتظرة"}
+          - {code: 519, libelle: "Concours bancaires courants", label_ar: "المساهمات البنكية الجارية"}
+      - code: 52
+        libelle: "Instruments financiers dérivés"
+        label_ar: "الأدوات المالية المشتقة"
+        sous_comptes: []
+      - code: 53
+        libelle: "Caisse"
+        label_ar: "الصندوق"
+        sous_comptes: []
+      - code: 54
+        libelle: "Régies d'avances et accréditifs"
+        label_ar: "وكالات التسبيقات والاعتمادات"
+        sous_comptes:
+          - {code: 541, libelle: "Régies d'avances", label_ar: "وكالات التسبيقات"}
+          - {code: 542, libelle: "Accréditifs", label_ar: "الاعتمادات"}
+      - code: 55
+        libelle: "(Disponible)"
+        label_ar: "(متاح)"
+        disponible: true
+        sous_comptes: []
+      - code: 56
+        libelle: "(Disponible)"
+        label_ar: "(متاح)"
+        disponible: true
+        sous_comptes: []
+      - code: 57
+        libelle: "(Disponible)"
+        label_ar: "(متاح)"
+        disponible: true
+        sous_comptes: []
+      - code: 58
+        libelle: "Virements internes"
+        label_ar: "التحويلات الداخلية"
+        sous_comptes:
+          - {code: 581, libelle: "Virements de fonds", label_ar: "تحويلات الأموال"}
+          - {code: 588, libelle: "Autres virements internes", label_ar: "تحويلات داخلية أخرى"}
+      - code: 59
+        libelle: "Pertes de valeur sur actifs financiers courants"
+        label_ar: "خسائر القيمة عن الأصول المالية الجارية"
+        sous_comptes:
+          - {code: 591, libelle: "Pertes de valeur sur valeurs en banque et établissements financiers", label_ar: "خسائر القيمة عن القيم المودعة في البنوك"}
+          - {code: 594, libelle: "Pertes de valeur sur régies d'avances et accréditifs", label_ar: "خسائر القيمة عن وكالات التسبيقات"}
+
+  # ==========================================================
+  # CLASSE 6 — COMPTES DE CHARGES
+  # ==========================================================
+  - code: 6
+    titre: "Comptes de charges"
+    titre_ar: "حسابات الأعباء"
+    comptes:
+      - code: 60
+        libelle: "Achats consommés"
+        label_ar: "المشتريات المستهلكة"
+        sous_comptes:
+          - {code: 600, libelle: "Achats de marchandises vendues", label_ar: "مشتريات البضائع المبيعة"}
+          - {code: 601, libelle: "Matières premières", label_ar: "المواد الأولية"}
+          - {code: 602, libelle: "Autres approvisionnements", label_ar: "التموينات الأخرى"}
+          - {code: 603, libelle: "Variations des stocks", label_ar: "تغيرات المخزونات"}
+          - {code: 604, libelle: "Achats d'études et de prestations de services", label_ar: "مشتريات الدراسات والخدمات"}
+          - {code: 605, libelle: "Achats de matériels, équipements et travaux", label_ar: "مشتريات المعدات والأشغال"}
+          - {code: 606, libelle: "(Disponible)", label_ar: "(متاح)", disponible: true}
+          - {code: 607, libelle: "Achats non stockés de matières et fournitures", label_ar: "مشتريات غير مخزنة من المواد واللوازم"}
+          - {code: 608, libelle: "Frais accessoires d'achat", label_ar: "مصاريف الشراء التابعة"}
+          - {code: 609, libelle: "Rabais, remises et ristournes obtenus sur achats", label_ar: "التخفيضات عن مشتريات"}
+      - code: 61
+        libelle: "Services extérieurs"
+        label_ar: "الخدمات الخارجية"
+        sous_comptes:
+          - {code: 611, libelle: "Sous-traitance générale", label_ar: "التقاول العام"}
+          - {code: 613, libelle: "Locations", label_ar: "الإيجارات"}
+          - {code: 614, libelle: "Charges locatives et charges de copropriété", label_ar: "الأعباء الإيجارية"}
+          - {code: 615, libelle: "Entretien, réparations et maintenance", label_ar: "الصيانة والتصليحات"}
+          - {code: 616, libelle: "Primes d'assurances", label_ar: "أقساط التأمينات"}
+          - {code: 617, libelle: "Études et recherches", label_ar: "الدراسات والأبحاث"}
+          - {code: 618, libelle: "Documentation et divers", label_ar: "التوثيق والمستجدات"}
+          - {code: 619, libelle: "Rabais, remises, ristournes obtenus sur services extérieurs", label_ar: "التخفيضات عن خدمات خارجية"}
+      - code: 62
+        libelle: "Autres services extérieurs"
+        label_ar: "الخدمات الخارجية الأخرى"
+        sous_comptes:
+          - {code: 621, libelle: "Personnel extérieur à l'entreprise", label_ar: "العاملون الخارجيون"}
+          - {code: 622, libelle: "Rémunérations d'intermédiaires et honoraires", label_ar: "أجور الوسطاء والأتعاب"}
+          - {code: 623, libelle: "Publicité, publication, relations publiques", label_ar: "الإشهار والنشر"}
+          - {code: 624, libelle: "Transports de biens et transport collectif du personnel", label_ar: "نقل السلع والمستخدمين"}
+          - {code: 625, libelle: "Déplacements, missions et réceptions", label_ar: "التنقلات والمهمات"}
+          - {code: 626, libelle: "Frais postaux et de télécommunications", label_ar: "مصاريف البريد والاتصالات"}
+          - {code: 627, libelle: "Services bancaires et assimilés", label_ar: "الخدمات المصرفية"}
+          - {code: 628, libelle: "Cotisations et divers", label_ar: "الاشتراكات والمستجدات"}
+          - {code: 629, libelle: "Rabais, remises, ristournes obtenus sur autres services extérieurs", label_ar: "التخفيضات عن الخدمات الأخرى"}
+      - code: 63
+        libelle: "Charges de personnel"
+        label_ar: "أعباء المستخدمين"
+        sous_comptes:
+          - {code: 631, libelle: "Rémunérations du personnel", label_ar: "أجور المستخدمين"}
+          - {code: 634, libelle: "Rémunérations de l'exploitant individuel", label_ar: "أجور المستغل الفردي"}
+          - {code: 635, libelle: "Cotisations aux organismes sociaux", label_ar: "الاشتراكات للهيئات الاجتماعية"}
+          - {code: 636, libelle: "Charges sociales de l'exploitant individuel", label_ar: "الأعباء الاجتماعية للمستغل"}
+          - {code: 637, libelle: "Autres charges sociales", label_ar: "الأعباء الاجتماعية الأخرى"}
+          - {code: 638, libelle: "Autres charges de personnel", label_ar: "أعباء المستخدمين الأخرى"}
+      - code: 64
+        libelle: "Impôts, taxes et versements assimilés"
+        label_ar: "الضرائب والرسوم والمدفوعات المماثلة"
+        sous_comptes:
+          - {code: 641, libelle: "Impôts, taxes et versements assimilés sur rémunérations", label_ar: "الضرائب على الأجور"}
+          - {code: 642, libelle: "Impôts et taxes non récupérables sur chiffre d'affaires", label_ar: "الضرائب غير المسترجعة"}
+          - {code: 645, libelle: "Autres impôts et taxes (hors impôts sur les résultats)", label_ar: "الضرائب والرسوم الأخرى"}
+          - {code: 647, libelle: "Taxe sur l'activité professionnelle (TAP)", label_ar: "الرسم على النشاط المهني"}
+      - code: 65
+        libelle: "Autres charges opérationnelles"
+        label_ar: "الأعباء العملياتية الأخرى"
+        sous_comptes:
+          - {code: 651, libelle: "Redevances pour concessions, brevets, licences, logiciels, droits et valeurs similaires", label_ar: "الأتاوى عن الامتيازات"}
+          - {code: 652, libelle: "Moins-values sur sortie d'actifs immobilisés non financiers", label_ar: "نواقص القيمة عن خروج أصول"}
+          - {code: 653, libelle: "Jetons de présence", label_ar: "أتعاب حضور"}
+          - {code: 654, libelle: "Pertes sur créances irrécouvrables", label_ar: "خسائر عن ديون غير قابلة للتحصيل"}
+          - {code: 655, libelle: "Quote-part de résultat sur opérations faites en commun", label_ar: "قسط النتائج عن عمليات مشتركة"}
+          - {code: 656, libelle: "Amendes et pénalités, subventions accordées, dons et libéralités", label_ar: "الغرامات والعقوبات"}
+          - {code: 657, libelle: "Charges exceptionnelles de gestion courante", label_ar: "الأعباء الاستثنائية للتسيير"}
+          - {code: 658, libelle: "Autres charges de gestion courante", label_ar: "أعباء أخرى للتسيير الجاري"}
+      - code: 66
+        libelle: "Charges financières"
+        label_ar: "الأعباء المالية"
+        sous_comptes:
+          - {code: 661, libelle: "Charges d'intérêts", label_ar: "أعباء الفوائد"}
+          - {code: 664, libelle: "Pertes sur créances liées à des participations", label_ar: "الخسائر عن الحسابات المرتبطة بمساهمات"}
+          - {code: 665, libelle: "Écart d'évaluation sur actifs financiers - moins-values", label_ar: "فارق التقييم - نواقص القيمة"}
+          - {code: 666, libelle: "Pertes de change", label_ar: "خسائر الصرف"}
+          - {code: 667, libelle: "Pertes nettes sur cessions d'actifs financiers", label_ar: "الخسائر الصافية عن التنازل"}
+          - {code: 668, libelle: "Autres charges financières", label_ar: "الأعباء المالية الأخرى"}
+      - code: 67
+        libelle: "Éléments extraordinaires (charges)"
+        label_ar: "العناصر غير العادية - الأعباء"
+        sous_comptes: []
+      - code: 68
+        libelle: "Dotations aux amortissements, provisions et pertes de valeur"
+        label_ar: "المخصصات للاهتلاكات والمؤونات"
+        sous_comptes:
+          - {code: 681, libelle: "Dotations aux amortissements, provisions et pertes de valeur, actifs non courants", label_ar: "المخصصات - الأصول غير الجارية"}
+          - {code: 682, libelle: "Dotations aux amortissements, provisions et pertes de valeur des biens mis en concession", label_ar: "المخصصات - السلع الموضوعة موضع الامتياز"}
+          - {code: 685, libelle: "Dotations aux amortissements, provisions et pertes de valeur, actifs courants", label_ar: "المخصصات - الأصول الجارية"}
+          - {code: 686, libelle: "Dotations aux amortissements, provisions et pertes de valeur, éléments financiers", label_ar: "المخصصات - العناصر المالية"}
+          - {code: 687, libelle: "Dotations - charges hors activités ordinaires (HAO)", label_ar: "مخصصات ذات طابع استثنائي"}
+      - code: 69
+        libelle: "Impôts sur les résultats et assimilés"
+        label_ar: "الضرائب عن النتائج وما يماثلها"
+        sous_comptes:
+          - {code: 692, libelle: "Imposition différée actif", label_ar: "فرض الضريبة المؤجلة عن الأصول"}
+          - {code: 693, libelle: "Imposition différée passif", label_ar: "فرض الضريبة المؤجلة عن الخصوم"}
+          - {code: 695, libelle: "Impôts sur les bénéfices basés sur le résultat des activités ordinaires", label_ar: "الضرائب على الأرباح"}
+          - {code: 698, libelle: "Autres impôts sur les résultats", label_ar: "الضرائب الأخرى عن النتائج"}
+
+  # ==========================================================
+  # CLASSE 7 — COMPTES DE PRODUITS
+  # ==========================================================
+  - code: 7
+    titre: "Comptes de produits"
+    titre_ar: "حسابات المنتوجات"
+    comptes:
+      - code: 70
+        libelle: "Ventes de marchandises, de produits fabriqués, de prestations de services et produits annexes"
+        label_ar: "المبيعات من البضائع والمنتجات والخدمات"
+        sous_comptes:
+          - {code: 700, libelle: "Ventes de marchandises", label_ar: "المبيعات من البضائع"}
+          - {code: 701, libelle: "Ventes de produits finis", label_ar: "المبيعات من المنتوجات التامة"}
+          - {code: 702, libelle: "Ventes de produits intermédiaires", label_ar: "المبيعات من المنتوجات الوسيطة"}
+          - {code: 703, libelle: "Ventes de produits résiduels", label_ar: "المبيعات من المنتوجات المتبقية"}
+          - {code: 704, libelle: "Vente de travaux", label_ar: "مبيعات الأشغال"}
+          - {code: 705, libelle: "Vente d'études", label_ar: "مبيعات الدراسات"}
+          - {code: 706, libelle: "Autres prestations de services", label_ar: "تقديم الخدمات الأخرى"}
+          - {code: 708, libelle: "Produits des activités annexes", label_ar: "منتوجات الأنشطة الملحقة"}
+          - {code: 709, libelle: "Rabais, remises et ristournes accordés", label_ar: "التخفيضات الممنوحة"}
+      - code: 71
+        libelle: "Production stockée ou déstockée"
+        label_ar: "الإنتاج المخزن أو المنتقص من المخزون"
+        sous_comptes: []
+      - code: 72
+        libelle: "Production immobilisée"
+        label_ar: "الإنتاج المثبت"
+        sous_comptes:
+          - {code: 723, libelle: "Variation de stocks d'encours", label_ar: "تغيّر المخزونات الجارية"}
+          - {code: 724, libelle: "Variation de stocks de produits", label_ar: "تغيّر المخزونات من المنتجات"}
+          - {code: 731, libelle: "Production immobilisée d'actifs incorporels", label_ar: "الإنتاج المثبت للأصول المعنوية"}
+          - {code: 732, libelle: "Production immobilisée d'actifs corporels", label_ar: "الإنتاج المثبت للأصول العينية"}
+      - code: 74
+        libelle: "Subventions d'exploitation"
+        label_ar: "إعانات الاستغلال"
+        sous_comptes:
+          - {code: 741, libelle: "Subvention d'équilibre", label_ar: "إعانة التوازن"}
+          - {code: 748, libelle: "Autres subventions d'exploitation", label_ar: "إعانات أخرى للاستغلال"}
+      - code: 75
+        libelle: "Autres produits opérationnels"
+        label_ar: "المنتوجات العملياتية الأخرى"
+        sous_comptes:
+          - {code: 751, libelle: "Redevances pour concessions, brevets, licences, logiciels et valeurs similaires", label_ar: "الأتاوى عن الامتياز والبراءات"}
+          - {code: 752, libelle: "Plus-values sur sorties d'actifs immobilisés non financiers", label_ar: "فوائض القيمة عن خروج الأصول"}
+          - {code: 753, libelle: "Jetons de présence et rémunérations d'administrateurs ou de gérants", label_ar: "أتعاب الحضور"}
+          - {code: 754, libelle: "Quotes-parts de subventions d'investissement virées au résultat de l'exercice", label_ar: "أقساط إعانات الاستثمار"}
+          - {code: 755, libelle: "Quote-part de résultat sur opérations faites en commun", label_ar: "قسط النتيجة عن العمليات المشتركة"}
+          - {code: 756, libelle: "Rentrées sur créances amorties", label_ar: "المدخولات عن الحسابات المهتلكة"}
+          - {code: 757, libelle: "Produits exceptionnels sur opérations de gestion", label_ar: "المنتوجات الاستثنائية"}
+          - {code: 758, libelle: "Autres produits de gestion courante", label_ar: "المنتوجات الأخرى للتسيير الجاري"}
+      - code: 76
+        libelle: "Produits financiers"
+        label_ar: "المنتوجات المالية"
+        sous_comptes:
+          - {code: 761, libelle: "Produits des participations", label_ar: "منتوجات المساهمات"}
+          - {code: 762, libelle: "Revenus des actifs financiers", label_ar: "عائدات الأصول المالية"}
+          - {code: 763, libelle: "Revenus de créances", label_ar: "عائدات الحسابات الدائنة"}
+          - {code: 764, libelle: "Revenus des valeurs mobilières de placement", label_ar: "عوائد السندات المالية الموظفة"}
+          - {code: 765, libelle: "Écart d'évaluation sur actifs financiers, plus-values", label_ar: "فارق التقييم - فوائض القيمة"}
+          - {code: 766, libelle: "Gains de change", label_ar: "أرباح الصرف"}
+          - {code: 767, libelle: "Profits nets sur cessions d'actifs financiers", label_ar: "الأرباح الصافية عن التنازل"}
+          - {code: 768, libelle: "Autres produits financiers", label_ar: "المنتوجات المالية الأخرى"}
+      - code: 77
+        libelle: "Éléments extraordinaires (produits)"
+        label_ar: "العناصر غير العادية - المنتجات"
+        sous_comptes: []
+      - code: 78
+        libelle: "Reprises sur pertes de valeur et provisions"
+        label_ar: "الاسترجاعات عن خسائر القيمة والمؤونات"
+        sous_comptes:
+          - {code: 781, libelle: "Reprises d'exploitation sur pertes de valeur et provisions - actifs non courants", label_ar: "استرجاعات الاستغلال - الأصول غير الجارية"}
+          - {code: 785, libelle: "Reprises d'exploitation sur pertes de valeur et provisions - actifs courants", label_ar: "استرجاعات الاستغلال - الأصول الجارية"}
+          - {code: 786, libelle: "Reprises financières sur pertes de valeur et provisions", label_ar: "الاسترجاعات المالية"}
+          - {code: 787, libelle: "Reprises HAO", label_ar: "استرجاعات خارج النشاط العادي"}
+      - code: 79
+        libelle: "(Disponible)"
+        label_ar: "(متاح)"
+        disponible: true
+        sous_comptes: []

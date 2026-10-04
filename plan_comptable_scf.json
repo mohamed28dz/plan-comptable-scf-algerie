@@ -1,0 +1,3677 @@
+{
+  "audit_id": "pasted_text_scf_candidate_2026-10-04",
+  "langue": "fr",
+  "document": {
+    "source_fournie": "/home/ubuntu/upload/pasted_content.txt",
+    "copie_yaml": "/workspace/erpnext_pilot/pasted_text_scf_candidate_2026-10-04/plan_comptable_scf_copie_fidele.yaml",
+    "sha256_source": "093cc247766e061e60db33810b8c4bce2031b5c7e2884619bb1de7f573b74a20",
+    "sha256_copie": "093cc247766e061e60db33810b8c4bce2031b5c7e2884619bb1de7f573b74a20",
+    "copie_byte_a_byte_identique": true,
+    "taille_octets": 52594,
+    "lignes_source": 642,
+    "syntaxe_yaml": "valide",
+    "parseur": "PyYAML 6.0.3 (virtualenv ERPNext déjà présent; aucune installation)",
+    "cles_racine": [
+      "metadata",
+      "classes"
+    ],
+    "classes": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "lignes_comptes": 352,
+    "codes_uniques": 352,
+    "doublons": [],
+    "comptes_a_2_chiffres": 69,
+    "subdivisions_a_3_ou_4_chiffres": 283,
+    "entrees_disponible": 9,
+    "champs_FR_AR_manquants": []
+  },
+  "attestation_officielle": {
+    "possible": false,
+    "conclusion": "Le texte joint n’établit pas sa propre provenance officielle et comporte des divergences matérielles avec la nomenclature obligatoire/détaillée du JORADP. Une copie YAML valide n’est pas une attestation de conformité.",
+    "bases": [
+      {
+        "nom": "Loi algérienne n° 07-11 du 25 novembre 2007, Journal officiel n°74/2007",
+        "url": "https://www.joradp.dz/FTP/jo-francais/2007/F2007074.PDF",
+        "portee": "Loi-cadre sur le SCF; articles 6 et 9 prévoient les normes et une nomenclature fixées par voie réglementaire."
+      },
+      {
+        "nom": "Arrêté du 26 juillet 2008 publié au JORADP n°19 du 25 mars 2009, Titre III, §§311-1, 312-1 à 312-3",
+        "url": "https://www.joradp.dz/ftp/jo-francais/2009/f2009019.pdf",
+        "portee": "Le §312-1 rend obligatoire le résumé des comptes à deux chiffres et permet d’ouvrir les subdivisions nécessaires; la nomenclature à trois chiffres ou plus est présentée comme proposée."
+      },
+      {
+        "nom": "Ministère des Finances — Le Système Comptable Financier",
+        "url": "https://www.mf.gov.dz/pdf/Le_Systeme_comptable_Financier.pdf",
+        "portee": "Source institutionnelle de contexte sur les dates et le dispositif réglementaire; elle n’atteste pas le fichier joint."
+      }
+    ]
+  },
+  "cadre_joradp_deux_chiffres": {
+    "reference": "JORADP 2009/19, Titre III §§312-2 et 312-3",
+    "codes_obligatoires_attendus": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67",
+      "68",
+      "69",
+      "70",
+      "72",
+      "73",
+      "74",
+      "75",
+      "76",
+      "77",
+      "78",
+      "79"
+    ],
+    "nombre_attendu": 69,
+    "codes_deux_chiffres_dans_fichier": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67",
+      "68",
+      "69",
+      "70",
+      "71",
+      "72",
+      "74",
+      "75",
+      "76",
+      "77",
+      "78",
+      "79"
+    ],
+    "nombre_dans_fichier": 69,
+    "codes_officiels_absents": [
+      "73"
+    ],
+    "codes_fichier_non_dans_cadre": [
+      "71"
+    ],
+    "conclusion": "69 codes-cadres sont présents dans le fichier, mais le code 71 remplace 73; le compte numérique est donc égal, mais le contenu ne correspond pas au cadre obligatoire."
+  },
+  "verification_nomenclature_detaillee_joradp": {
+    "codes_subdivisions_dans_fichier": 283,
+    "codes_retrouves_comme_jetons_numeriques_exacts_dans_la_section_extraite": 265,
+    "codes_non_retrouves": [
+      "110",
+      "119",
+      "130",
+      "151",
+      "437",
+      "514",
+      "606",
+      "647",
+      "687",
+      "764",
+      "787",
+      "1011",
+      "1012",
+      "1013",
+      "1061",
+      "1063",
+      "1068",
+      "4456"
+    ],
+    "limite": "Un code détaillé non retrouvé exactement dans la nomenclature proposée du JORADP n’est pas, de ce seul fait, interdit : le §312-1 autorise les subdivisions nécessaires. Les conflits de libellé explicitement établis sont recensés séparément."
+  },
+  "comparaison_capture_onca": {
+    "url": "https://onca.dz/plan-comptable",
+    "fichier_capture": "/workspace/erpnext_pilot/plan_comptable_scf_onca_candidate_2026-10-04/data/onca_scf_994.csv",
+    "date_capture": "2026-10-04",
+    "lignes_onca": 994,
+    "codes_du_fichier_communs": 339,
+    "codes_du_fichier_absents_de_la_capture": [
+      "71",
+      "130",
+      "151",
+      "437",
+      "514",
+      "606",
+      "647",
+      "687",
+      "764",
+      "767",
+      "787",
+      "1011",
+      "2803"
+    ],
+    "nombre_avec_ecart_de_libelle_apres_normalisation": 213,
+    "normalisation": "NFKD/casse/diacritiques, apostrophes et tirets typographiques, espaces et point terminal; cette comparaison mécanique n’est pas une expertise de traduction ou de droit.",
+    "ecarts_de_libelles": [
+      {
+        "code": "10",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Capital, réserves et assimilées",
+          "libelle_ar": "رأس المال، الاحتياطات وما يماثلها"
+        },
+        "onca_capture": {
+          "libelle_fr": "Capital, réserves et assimilées.",
+          "libelle_ar": "رأس المال، الاحتياطيات والمكافآت المتماثلة."
+        }
+      },
+      {
+        "code": "101",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Capital émis",
+          "libelle_ar": "رأس المال الاجتماعي الصادر"
+        },
+        "onca_capture": {
+          "libelle_fr": "Capital émis ou capital social ou fonds de dotation, ou fonds d’exploitation",
+          "libelle_ar": "رأس المال المُصدَر أو الرأس المال الاجتماعي أو الصندوق التحفيزي أو صندوق الإستغلال"
+        }
+      },
+      {
+        "code": "1012",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Capital souscrit appelé, non versé",
+          "libelle_ar": "رأس المال المطلوب غير المدفوع"
+        },
+        "onca_capture": {
+          "libelle_fr": "Fonds de dotation",
+          "libelle_ar": ""
+        }
+      },
+      {
+        "code": "1013",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Capital souscrit, appelé, versé",
+          "libelle_ar": "رأس المال المكتتب المدفوع"
+        },
+        "onca_capture": {
+          "libelle_fr": "Fonds d'exploitation",
+          "libelle_ar": ""
+        }
+      },
+      {
+        "code": "104",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Primes liées au capital social",
+          "libelle_ar": "علاوات الإصدار والاندماج"
+        },
+        "onca_capture": {
+          "libelle_fr": "Ecart d’évaluation",
+          "libelle_ar": "فارق التقييم"
+        }
+      },
+      {
+        "code": "105",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Écarts de réévaluation",
+          "libelle_ar": "فروق إعادة تقييم الأصول"
+        },
+        "onca_capture": {
+          "libelle_fr": "Ecart de réévaluation",
+          "libelle_ar": "فارق إعادة التقييم"
+        }
+      },
+      {
+        "code": "106",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Réserves",
+          "libelle_ar": "الاحتياطات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Réserves (légale, statutaire, ordinaire, réglementée)",
+          "libelle_ar": "الاحتياطيات (القانونية، النظامية، العادية، المنظمة)."
+        }
+      },
+      {
+        "code": "1061",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Réserve légale",
+          "libelle_ar": "الاحتياطي القانوني"
+        },
+        "onca_capture": {
+          "libelle_fr": "Réserve légale",
+          "libelle_ar": ""
+        }
+      },
+      {
+        "code": "1063",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Réserves statutaires ou contractuelles",
+          "libelle_ar": "احتياطيات النظام الأساسي"
+        },
+        "onca_capture": {
+          "libelle_fr": "Réserves statutaires ou contractuelles",
+          "libelle_ar": ""
+        }
+      },
+      {
+        "code": "1068",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Autres réserves",
+          "libelle_ar": "احتياطيات أخرى"
+        },
+        "onca_capture": {
+          "libelle_fr": "Autres réserves",
+          "libelle_ar": ""
+        }
+      },
+      {
+        "code": "108",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Compte de l'exploitant",
+          "libelle_ar": "حساب المستغل"
+        },
+        "onca_capture": {
+          "libelle_fr": "Compte de l'exploitant",
+          "libelle_ar": "حساب الإستغلال"
+        }
+      },
+      {
+        "code": "109",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Capital souscrit non appelé",
+          "libelle_ar": "رأس المال المكتتب غير المطلوب"
+        },
+        "onca_capture": {
+          "libelle_fr": "Capital souscrit non appelé",
+          "libelle_ar": "رأس المال المكتتب غير مسمى"
+        }
+      },
+      {
+        "code": "11",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Report à nouveau",
+          "libelle_ar": "الترحيل من جديد"
+        },
+        "onca_capture": {
+          "libelle_fr": "Report à nouveau.",
+          "libelle_ar": "الترحيل الجديد"
+        }
+      },
+      {
+        "code": "110",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Report à nouveau créditeur",
+          "libelle_ar": "الترحيل الدائن"
+        },
+        "onca_capture": {
+          "libelle_fr": "Report à nouveau créditeur",
+          "libelle_ar": "الترحيل الجديد المدين"
+        }
+      },
+      {
+        "code": "119",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Report à nouveau débiteur",
+          "libelle_ar": "الترحيل المدين"
+        },
+        "onca_capture": {
+          "libelle_fr": "Report à nouveau débiteur",
+          "libelle_ar": "الترحيل الجديد الدائن"
+        }
+      },
+      {
+        "code": "13",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Produits et charges différés - hors cycle d'exploitation",
+          "libelle_ar": "المنتوجات والأعباء المؤجلة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Produits et charges différés - hors cycle d’exploitation.",
+          "libelle_ar": "االإيرادات والمصروفات المؤجلة ا خارج دور الإستغلال"
+        }
+      },
+      {
+        "code": "131",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Subventions d'équipement",
+          "libelle_ar": "إعانات التجهيز"
+        },
+        "onca_capture": {
+          "libelle_fr": "Subventions d’équipement",
+          "libelle_ar": "الدعم الخاصة بالتجهيزات"
+        }
+      },
+      {
+        "code": "132",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Autres subventions d'investissements",
+          "libelle_ar": "إعانات أخرى للاستثمار"
+        },
+        "onca_capture": {
+          "libelle_fr": "Autres subventions d’investissement",
+          "libelle_ar": "الدعم الاستثماري الآخر"
+        }
+      },
+      {
+        "code": "133",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Impôts différés actif",
+          "libelle_ar": "الضرائب المؤجلة على الأصول"
+        },
+        "onca_capture": {
+          "libelle_fr": "Impôts différés actif",
+          "libelle_ar": "الضرائب المؤجلة (الأصول)"
+        }
+      },
+      {
+        "code": "134",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Impôts différés passif",
+          "libelle_ar": "الضرائب المؤجلة على الخصوم"
+        },
+        "onca_capture": {
+          "libelle_fr": "Impôts différés passif",
+          "libelle_ar": "الضرائب المؤجلة (الخصوم)"
+        }
+      },
+      {
+        "code": "138",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Autres produits et charges différés",
+          "libelle_ar": "منتجات وأعباء أخرى مؤجلة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Autres produits et charges différés",
+          "libelle_ar": "الإيرادات والمصاريف المؤجلة الأخرى"
+        }
+      },
+      {
+        "code": "14",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "(Disponible)",
+          "libelle_ar": "(متاح)"
+        },
+        "onca_capture": {
+          "libelle_fr": "Plus values de cession à réinvestir",
+          "libelle_ar": "أرباح البيع المعفاة من الضريبة والتي يجب إعادة استثمارها."
+        }
+      },
+      {
+        "code": "15",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Provisions pour charges - passifs non courants",
+          "libelle_ar": "المؤونات للأعباء - الخصوم غير الجارية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Provisions pour charges - Passif non courants.",
+          "libelle_ar": "المؤونات الخاصة بالمصاريف - الخصوم الغير جارية"
+        }
+      },
+      {
+        "code": "153",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Provisions pour pensions et obligations similaires",
+          "libelle_ar": "مؤونات التقاعد والمنافع المشابهة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Provisions pour pensions et obligations similaires",
+          "libelle_ar": "المؤونات على القاعد والالتزامات المماثلة"
+        }
+      },
+      {
+        "code": "155",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Provisions pour impôts",
+          "libelle_ar": "مؤونات الضرائب"
+        },
+        "onca_capture": {
+          "libelle_fr": "Provisions pour impôts",
+          "libelle_ar": "المؤونات على الضرائب"
+        }
+      },
+      {
+        "code": "156",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Provisions pour renouvellement des immobilisations",
+          "libelle_ar": "مؤونات تجديد التثبيتات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Provisions pour renouvellement des immobilisations (concession)",
+          "libelle_ar": "المؤونات لتجديد الأصول الثابتة (الامتياز)"
+        }
+      },
+      {
+        "code": "158",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Autres provisions pour charges - passifs non courants",
+          "libelle_ar": "مؤونات أخرى للأعباء"
+        },
+        "onca_capture": {
+          "libelle_fr": "Autres provisions pour charges - Passif non courants",
+          "libelle_ar": "المؤونات الأخرى للمصروفات - الخصوصيات غير الجارية"
+        }
+      },
+      {
+        "code": "16",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Emprunts et dettes assimilés",
+          "libelle_ar": "الاقتراضات والديون المماثلة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Emprunts et dettes assimilés",
+          "libelle_ar": "القروض والديون المماثلة"
+        }
+      },
+      {
+        "code": "167",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Dettes rattachées à des participations",
+          "libelle_ar": "الديون المرتبطة بالمساهمات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Dettes sur contrat de location-financement",
+          "libelle_ar": "الديون المترتبة على عقد الإيجار– التمويل"
+        }
+      },
+      {
+        "code": "168",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Autres emprunts et dettes assimilées",
+          "libelle_ar": "اقتراضات أخرى وديون مماثلة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Autres emprunts et dettes assimilés",
+          "libelle_ar": "الإقتراضات والديون الأخرى المماثلة"
+        }
+      },
+      {
+        "code": "17",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Dettes rattachées à des participations",
+          "libelle_ar": "الديون المرتبطة بالمساهمات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Dettes rattachées à des participations.",
+          "libelle_ar": "الديون المرتبطة بالمشاركات"
+        }
+      },
+      {
+        "code": "171",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Dettes rattachées à des participations groupe",
+          "libelle_ar": "الديون المرتبطة بمساهمات المجمع"
+        },
+        "onca_capture": {
+          "libelle_fr": "Dettes rattachées à des participations groupe",
+          "libelle_ar": "لديون المرتبطة بمساهمات المجمع"
+        }
+      },
+      {
+        "code": "172",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Dettes rattachées à des participations hors groupe",
+          "libelle_ar": "الديون المرتبطة بمساهمات خارج المجمع"
+        },
+        "onca_capture": {
+          "libelle_fr": "Dettes rattachés à des participations hors groupe",
+          "libelle_ar": "الديون المرتبطة بمساهمات خارج المجمع"
+        }
+      },
+      {
+        "code": "173",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Dettes rattachées à des sociétés en participation",
+          "libelle_ar": "الديون المرتبطة بشركات في شكل مساهمة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Dettes rattachés à des sociétés en participation",
+          "libelle_ar": "الديون المرتبطة بشركات في شكل مساهمة"
+        }
+      },
+      {
+        "code": "18",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Comptes de liaison des établissements et sociétés en participation",
+          "libelle_ar": "حسابات الارتباط"
+        },
+        "onca_capture": {
+          "libelle_fr": "Comptes de liaison des établissements et sociétés en participation.",
+          "libelle_ar": "حسابات الارتباط للمؤسسات والشركات المشاركة"
+        }
+      },
+      {
+        "code": "19",
+        "class_code": "1",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "(Disponible)",
+          "libelle_ar": "(متاح)"
+        },
+        "onca_capture": {
+          "libelle_fr": "Disponible",
+          "libelle_ar": ""
+        }
+      },
+      {
+        "code": "203",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Frais de développement immobilisables",
+          "libelle_ar": "مصاريف التنمية القابلة للتثبيت"
+        },
+        "onca_capture": {
+          "libelle_fr": "Frais de développement immobilisables",
+          "libelle_ar": "مصاريف التطوير القابلة للتثبيت"
+        }
+      },
+      {
+        "code": "204",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Logiciels informatiques et assimilés",
+          "libelle_ar": "برمجيات المعلوماتية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Logiciels informatiques et assimilés",
+          "libelle_ar": "برمجيات المعلوماتية وما شابهها"
+        }
+      },
+      {
+        "code": "205",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Concessions et droits similaires, brevets, licences, marques",
+          "libelle_ar": "الامتيازات والحقوق المماثلة والبراءات والرخص"
+        },
+        "onca_capture": {
+          "libelle_fr": "Concessions et droits similaires, brevets, licences, marques",
+          "libelle_ar": "الامتيازات والحقوق المماثلة والبراءات والرخص والعلامات"
+        }
+      },
+      {
+        "code": "211",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Terrains",
+          "libelle_ar": "الأراضي"
+        },
+        "onca_capture": {
+          "libelle_fr": "Terrains",
+          "libelle_ar": "أراضي"
+        }
+      },
+      {
+        "code": "212",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Agencements et aménagements de terrains",
+          "libelle_ar": "تهيئة الأراضي"
+        },
+        "onca_capture": {
+          "libelle_fr": "Agencements et aménagements de terrain",
+          "libelle_ar": "عمليات ترتيب وتهيئة الأراضي"
+        }
+      },
+      {
+        "code": "215",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Installations techniques, matériel et outillage industriels",
+          "libelle_ar": "المنشآت التقنية والمعدات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Installations techniques, matériel et outillage industriels",
+          "libelle_ar": "المنشآت التقنية، المعدات والأدوات الصناعية"
+        }
+      },
+      {
+        "code": "221",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Terrains en concession",
+          "libelle_ar": "الأراضي الممنوح امتيازها"
+        },
+        "onca_capture": {
+          "libelle_fr": "Terrains en concession",
+          "libelle_ar": "الأراضي الممنوح امتيازاتها"
+        }
+      },
+      {
+        "code": "222",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Agencements et aménagements de terrain en concession",
+          "libelle_ar": "تهيئة الأراضي الممنوح امتيازها"
+        },
+        "onca_capture": {
+          "libelle_fr": "Agencements et aménagements de terrain en concession",
+          "libelle_ar": "عمليات ترتيب وتهيئة الأراضي الممنوح امتيازاتها"
+        }
+      },
+      {
+        "code": "223",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Constructions en concession",
+          "libelle_ar": "البناءات الممنوح امتيازها"
+        },
+        "onca_capture": {
+          "libelle_fr": "Constructions en concession",
+          "libelle_ar": "البناءات الممنوح امتيازاتها"
+        }
+      },
+      {
+        "code": "225",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Installations techniques en concession",
+          "libelle_ar": "المنشآت التقنية الممنوح امتيازها"
+        },
+        "onca_capture": {
+          "libelle_fr": "Installations techniques en concession",
+          "libelle_ar": "المنشآت التقنية الممنوح امتيازاتها"
+        }
+      },
+      {
+        "code": "228",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Autres immobilisations corporelles en concession",
+          "libelle_ar": "التثبيتات الأخرى الممنوح امتيازها"
+        },
+        "onca_capture": {
+          "libelle_fr": "Autres immobilisations corporelles en concession",
+          "libelle_ar": "التثبيتات العينية الأخرى الممنوح امتيزاتها"
+        }
+      },
+      {
+        "code": "238",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Avances et acomptes versés sur commandes d'immobilisations",
+          "libelle_ar": "التسبيقات على طلبات التثبيتات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Avances et acomptes versés sur commandes d'immobilisations",
+          "libelle_ar": "التثبيات والحسابات المدفوعة على طلبيات بالتثبيتات"
+        }
+      },
+      {
+        "code": "24",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "(Disponible)",
+          "libelle_ar": "(متاح)"
+        },
+        "onca_capture": {
+          "libelle_fr": "Actifs biologiques",
+          "libelle_ar": "الأصول البيولوجية"
+        }
+      },
+      {
+        "code": "26",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Participations et créances rattachées à des participations",
+          "libelle_ar": "مساهمات وحسابات دائنة ملحقة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Participations et créances rattachées à des participations.",
+          "libelle_ar": "المساهمات والحقوق الملحقة بالمساهمات"
+        }
+      },
+      {
+        "code": "265",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Titres mis en équivalence",
+          "libelle_ar": "سندات المساهمة المقيّمة بطريقة المكافئ"
+        },
+        "onca_capture": {
+          "libelle_fr": "Titres de participation évalués par équivalence (entreprises associées)",
+          "libelle_ar": "سندات المساهمة المقيمة بالمعادلة (المؤسسات المشاركة)"
+        }
+      },
+      {
+        "code": "269",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Versements restant à effectuer sur titres de participation non libérés",
+          "libelle_ar": "عمليات الدفع الباقية عن سندات مساهمة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Versements restant à effectuer sur titres de participation non libérés",
+          "libelle_ar": "عمليات الدفع الباقية الواجب القيام بها عن سندات المساهمة غير المحررة"
+        }
+      },
+      {
+        "code": "271",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Titres de participation / titres immobilisés",
+          "libelle_ar": "سندات المساهمة والسندات المثبتة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Titres immobilisés autres que les titres immobilisés de l'activité de portefeuille",
+          "libelle_ar": "السندات المثبتة الأخرى غير السندات المثبتة التابعة لنشاط المحفظة"
+        }
+      },
+      {
+        "code": "272",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Titres représentatifs de droit de créance (obligations, bons)",
+          "libelle_ar": "السندات الممثلة لحق الدين"
+        },
+        "onca_capture": {
+          "libelle_fr": "Titres représentatifs de droit de créance (obligations, bons)",
+          "libelle_ar": "السندات التي تمثل حق الدين الدائن (السندات والقسائم)"
+        }
+      },
+      {
+        "code": "273",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Titres immobilisés de l'activité de portefeuille",
+          "libelle_ar": "السندات المثبتة التابعة لنشاط الحافظة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Titres immobilisés de l'activité de portefeuille",
+          "libelle_ar": "السندات المثبتة التابعة لنشاط المحفظة"
+        }
+      },
+      {
+        "code": "274",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Prêts",
+          "libelle_ar": "قروض ممنوحة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Prêts et créances sur contrat de location - financement",
+          "libelle_ar": "القروض والحسابات الدائنة المترتبة على الايجار-التمويلي"
+        }
+      },
+      {
+        "code": "275",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Dépôts et cautionnements versés",
+          "libelle_ar": "ودائع وكفالات مدفوعة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Dépôts et cautionnements versés",
+          "libelle_ar": "الودائع والكفالات المدفوعة"
+        }
+      },
+      {
+        "code": "279",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Versements restant à effectuer sur titres immobilisés non libérés",
+          "libelle_ar": "ما بقي من عمليات الدفع عن السندات المثبتة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Versements restant à effectuer sur titres immobilisés non libérés",
+          "libelle_ar": "عمليات الدفع الباقية الواجب القيام بها عن السندات المثبتة غير المحررة"
+        }
+      },
+      {
+        "code": "280",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Amortissements des immobilisations incorporelles",
+          "libelle_ar": "اهتلاكات الأصول المعنوية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Amortissement des frais de recherche et développement immobilisables",
+          "libelle_ar": "إهتلاك مصاريف البحث والتطوير القابلة للتثبيت"
+        }
+      },
+      {
+        "code": "2804",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Amortissement des logiciels informatiques et assimilés",
+          "libelle_ar": "اهتلاك برمجيات المعلوماتية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Amortissement des logiciels informatiques et assimilés",
+          "libelle_ar": "إهتلاك البرمجيات المعلوماتية وما شابهها"
+        }
+      },
+      {
+        "code": "2805",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Amortissement concessions et droits similaires, brevets, licences, marques",
+          "libelle_ar": "اهتلاك الامتيازات والبراءات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Amort., Droit à la propriété industrielle et commerciale, Autres droits similaires",
+          "libelle_ar": "إهتلاك الحقوق على الملكية الصناعية والتجارية و الحقوق المشابهة"
+        }
+      },
+      {
+        "code": "2807",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Amortissement écart d'acquisition",
+          "libelle_ar": "اهتلاك فارق الاقتناء"
+        },
+        "onca_capture": {
+          "libelle_fr": "Amortissement, Ecart d’acquisition – « goodwill »",
+          "libelle_ar": "إهتلاك فارق الإقتناء"
+        }
+      },
+      {
+        "code": "281",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Amortissements des immobilisations corporelles",
+          "libelle_ar": "اهتلاكات الأصول المادية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Amortissement des immobilisations corporelles",
+          "libelle_ar": "إهتلاك التثبيتات العينية"
+        }
+      },
+      {
+        "code": "2812",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Amortissement agencements et aménagements de terrain",
+          "libelle_ar": "اهتلاك تهيئة الأراضي"
+        },
+        "onca_capture": {
+          "libelle_fr": "Amortissement, Agencements et aménagements de terrain",
+          "libelle_ar": "إهتلاك عمليات الترتيب وتهيئة الأراضي"
+        }
+      },
+      {
+        "code": "2813",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Amortissement constructions",
+          "libelle_ar": "اهتلاك البناءات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Amortissement, Bâtiments",
+          "libelle_ar": "إهتلاك البناءات"
+        }
+      },
+      {
+        "code": "2815",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Amortissement installations techniques",
+          "libelle_ar": "اهتلاك المنشآت التقنية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Amortissement, Installations complexes et materiels industriels",
+          "libelle_ar": "إهتلاك المنشآت التقنية و المعدات والصناعية"
+        }
+      },
+      {
+        "code": "2818",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Amortissement autres immobilisations corporelles",
+          "libelle_ar": "اهتلاك التثبيتات العينية الأخرى"
+        },
+        "onca_capture": {
+          "libelle_fr": "Amortissement, Autres immobilisations",
+          "libelle_ar": "إهتلاك التثبيات العينية الأخرى"
+        }
+      },
+      {
+        "code": "282",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Amortissement des immobilisations mises en concession",
+          "libelle_ar": "اهتلاك التثبيتات الموضوعة موضع امتياز"
+        },
+        "onca_capture": {
+          "libelle_fr": "Amortissement des immobilisations mises en concession",
+          "libelle_ar": "إهتلاك التثبيات الممنوح امتيازها"
+        }
+      },
+      {
+        "code": "2903",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur frais de recherche et développement immobilisables",
+          "libelle_ar": "خسائر القيمة عن مصاريف البحث والتنمية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Perte de val. Frais de développement immobilisables",
+          "libelle_ar": "خسائر القيمة عن مصاريف البحث والتطوير القابلة للتثبيت"
+        }
+      },
+      {
+        "code": "2904",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur logiciels informatiques et assimilés",
+          "libelle_ar": "خسائر القيمة عن البرمجيات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Perte de val. Logiciels de traitements informatiques",
+          "libelle_ar": "خسائر القيمة عن برمجيات المعلوماتية"
+        }
+      },
+      {
+        "code": "2905",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur concessions et droits similaires, brevets, licences, marques",
+          "libelle_ar": "خسائر القيمة عن الامتيازات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Perte de val. Droit à la propriété indust. et commerciale et Autres droits similaires",
+          "libelle_ar": "خسائر القيمة عن الملكية الصناعية والتجارية والحقوق الأخرى"
+        }
+      },
+      {
+        "code": "2907",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur écart d'acquisition",
+          "libelle_ar": "خسائر القيمة عن فارق الشراء"
+        },
+        "onca_capture": {
+          "libelle_fr": "Perte de val. Ecart d’acquisition – « goodwill »",
+          "libelle_ar": "خسائر القيمة عن فارق الاقتناء"
+        }
+      },
+      {
+        "code": "2908",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur autres immobilisations incorporelles",
+          "libelle_ar": "خسائر القيمة عن التثبيتات المعنوية الأخرى"
+        },
+        "onca_capture": {
+          "libelle_fr": "Perte de val. Fonds de commerce, droit au bail et actif environnemental",
+          "libelle_ar": "خسائر القيمة عن شهرة المحل، حق التأجير والأصول البيئية"
+        }
+      },
+      {
+        "code": "2912",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur agencements et aménagements de terrain",
+          "libelle_ar": "خسائر القيمة عن تهيئة الأراضي"
+        },
+        "onca_capture": {
+          "libelle_fr": "Perte de val. Agencements et aménagements de terrain",
+          "libelle_ar": "خسائر القيمة عن عمليات ترتيب وتهيئة الأراضي"
+        }
+      },
+      {
+        "code": "2913",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur constructions",
+          "libelle_ar": "خسائر القيمة عن البناءات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Perte de val. Bâtiments",
+          "libelle_ar": "خسائر القيمة عن البناءات"
+        }
+      },
+      {
+        "code": "2915",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur installations techniques",
+          "libelle_ar": "خسائر القيمة عن المنشآت التقنية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Perte de val. Installations complexes",
+          "libelle_ar": "خسائر القيمة عن المنشآت التقنية"
+        }
+      },
+      {
+        "code": "2918",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur autres immobilisations corporelles",
+          "libelle_ar": "خسائر القيمة عن التثبيتات العينية الأخرى"
+        },
+        "onca_capture": {
+          "libelle_fr": "Perte de val. Autres immobilisations",
+          "libelle_ar": "خسائر القيمة عن التثبيتات العينية الأخرى"
+        }
+      },
+      {
+        "code": "292",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur immobilisations mises en concession",
+          "libelle_ar": "خسائر القيمة عن التثبيتات الموضوعة موضع امتياز"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes de valeur sur immobilisations mises en concession",
+          "libelle_ar": "خسائر القيمة عن التثبيتات الممنوح امتيازها"
+        }
+      },
+      {
+        "code": "293",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur immobilisations en cours",
+          "libelle_ar": "خسائر القيمة عن التثبيتات الجاري إنجازها"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes de valeur sur immobilisations encours",
+          "libelle_ar": "خسائر القيمة عن التثبيتات الجاري إنجازها"
+        }
+      },
+      {
+        "code": "296",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur participations et créances rattachées à participations",
+          "libelle_ar": "خسائر القيمة عن المساهمات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes de valeur sur participations et créances rattachées à participations",
+          "libelle_ar": "خسائر القيمة عن المساهمات والحسابات الدائنة المرتبطة بالمساهمات"
+        }
+      },
+      {
+        "code": "298",
+        "class_code": "2",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur autres actifs financiers immobilisés",
+          "libelle_ar": "خسائر القيمة عن الأصول المالية الأخرى"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes de valeur sur autres actifs financiers immobilisés",
+          "libelle_ar": "خسائر القيمة عن الأصول المالية المثبتة الأخرى"
+        }
+      },
+      {
+        "code": "31",
+        "class_code": "3",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Matières premières et fournitures",
+          "libelle_ar": "المواد الأولية واللوازم"
+        },
+        "onca_capture": {
+          "libelle_fr": "Matières premières et fournitures.",
+          "libelle_ar": "المواد الأولية و اللوازم"
+        }
+      },
+      {
+        "code": "32",
+        "class_code": "3",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Autres approvisionnements",
+          "libelle_ar": "تموينات أخرى"
+        },
+        "onca_capture": {
+          "libelle_fr": "Autres approvisionnements.",
+          "libelle_ar": "التموينات الأخرى"
+        }
+      },
+      {
+        "code": "351",
+        "class_code": "3",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Produits intermédiaires",
+          "libelle_ar": "المنتجات الوسيطة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Produits intermédiaires",
+          "libelle_ar": "المنتجات الوسيطية"
+        }
+      },
+      {
+        "code": "358",
+        "class_code": "3",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Produits résiduels ou matières de récupération",
+          "libelle_ar": "المنتجات المتبقية والمواد المسترجعة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Produits résiduels ou matières de récupération (déchets, rebuts)",
+          "libelle_ar": "المنتجات المتبقية او المواد المسترجعة ( النفايات , السقطات )"
+        }
+      },
+      {
+        "code": "37",
+        "class_code": "3",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Stocks à l'extérieur",
+          "libelle_ar": "المخزونات في الخارج"
+        },
+        "onca_capture": {
+          "libelle_fr": "Stocks à l’extérieur (en cours de route, en dépôt ou consignation).",
+          "libelle_ar": "المخزونات في الخارج ( التي هي في الطريق , في المستودع او إيداع )"
+        }
+      },
+      {
+        "code": "380",
+        "class_code": "3",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Marchandises stockées",
+          "libelle_ar": "البضائع المخزنة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Marchandises stockées",
+          "libelle_ar": "المشتريات المخزنة"
+        }
+      },
+      {
+        "code": "381",
+        "class_code": "3",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Matières premières et fournitures stockées",
+          "libelle_ar": "المواد الأولية واللوازم المخزنة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Matières premières et fournitures stockées",
+          "libelle_ar": "المواد الأولية و اللوازم المخزنة"
+        }
+      },
+      {
+        "code": "382",
+        "class_code": "3",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Autres approvisionnements stockés",
+          "libelle_ar": "التموينات الأخرى المخزنة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Achats stockés, autres approvisionnements",
+          "libelle_ar": "التموينات الأخرى المخزنة"
+        }
+      },
+      {
+        "code": "39",
+        "class_code": "3",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur stocks et en-cours",
+          "libelle_ar": "خسائر القيمة عن المخزونات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes de valeur sur stocks et encours",
+          "libelle_ar": "خسائر القيمة عن المخزونات و المنتوجات قيد التنفيذ"
+        }
+      },
+      {
+        "code": "391",
+        "class_code": "3",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur matières premières et fournitures",
+          "libelle_ar": "خسائر القيمة عن المواد الأولية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes de valeur sur matières premières et fournitures",
+          "libelle_ar": "خسائر القيمة عن المواد الأولية و التوريدات"
+        }
+      },
+      {
+        "code": "393",
+        "class_code": "3",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur en-cours de production de biens",
+          "libelle_ar": "خسائر القيمة عن إنتاج السلع"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes de valeur sur en-cours de production de biens",
+          "libelle_ar": "خسائر القيمة عن انتاج السلع الجاري إنجازه"
+        }
+      },
+      {
+        "code": "394",
+        "class_code": "3",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur en-cours de production de services",
+          "libelle_ar": "خسائر القيمة عن إنتاج الخدمات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes de valeur sur en-cours de production de services",
+          "libelle_ar": "خسائر القيمة عن انتاج الخدمات الجاري إنجازه"
+        }
+      },
+      {
+        "code": "405",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Fournisseurs d'immobilisations, effets à payer",
+          "libelle_ar": "موردو تثبيتات السندات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Fournisseurs d'immobilisations, effets à payer",
+          "libelle_ar": "موردو تثبيتات السندات المطلوب دفعها"
+        }
+      },
+      {
+        "code": "408",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Fournisseurs, factures non parvenues",
+          "libelle_ar": "موردو الفواتير غير الواصلة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Fournisseurs factures non parvenues",
+          "libelle_ar": "موردو الفواتير التي لم تصل بعد"
+        }
+      },
+      {
+        "code": "409",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Fournisseurs débiteurs",
+          "libelle_ar": "الموردون المدينون"
+        },
+        "onca_capture": {
+          "libelle_fr": "Fournisseurs débiteurs, avances et acomptes versés, RRR à obtenir, autres",
+          "libelle_ar": "الموردون المدينون: التسبيقات والمدفوعات على الحساب، التخفيضات والحسومات والتنزيلات الواجب الحصول عليها والحسابات الدائنة الأخرى"
+        }
+      },
+      {
+        "code": "417",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Créances sur travaux ou prestations en cours",
+          "libelle_ar": "الحسابات الدائنة عن أشغال جار إنجازها"
+        },
+        "onca_capture": {
+          "libelle_fr": "Créances sur travaux ou prestations en cours",
+          "libelle_ar": "الحسابات الدائنة عن أشغال أو خدمات جاري إنجازها"
+        }
+      },
+      {
+        "code": "418",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Clients - produits non encore facturés",
+          "libelle_ar": "الزبائن - منتجات لم تعد فواتيرها"
+        },
+        "onca_capture": {
+          "libelle_fr": "Clients - produits (finis) non encore facturés",
+          "libelle_ar": "الزبائن-المنتجات التي لم تعد فواتيرها بعد"
+        }
+      },
+      {
+        "code": "419",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Clients créditeurs, avances reçues, RRR à accorder et autres avoirs à établir",
+          "libelle_ar": "الزبائن الدائنون"
+        },
+        "onca_capture": {
+          "libelle_fr": "Clients crédit. – avances reçues, RRR à accorder et autres avoirs à établir",
+          "libelle_ar": "الزبائن الدائنون-التسبيقات المستلمة، التخفيضات والحسومات والتنزيلات المطلوب منحها والموجودات الأخرى الواجب إعدادها"
+        }
+      },
+      {
+        "code": "421",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Personnel, rémunérations dues",
+          "libelle_ar": "المستخدمون - الأجور المستحقة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Personnel, rémunérations dues",
+          "libelle_ar": "المستخدمون، الأجور المستحقة"
+        }
+      },
+      {
+        "code": "425",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Personnel, avances et acomptes accordés",
+          "libelle_ar": "المستخدمون - التسبيقات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Personnel, avances et acomptes accordés",
+          "libelle_ar": "المستخدمون، التسبيقات والمدفوعات على الحساب الممنوحة"
+        }
+      },
+      {
+        "code": "426",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Personnel, dépôts reçus",
+          "libelle_ar": "المستخدمون - الودائع"
+        },
+        "onca_capture": {
+          "libelle_fr": "Personnel, dépôts reçus",
+          "libelle_ar": "المستخدمون، الودائع المستلمة"
+        }
+      },
+      {
+        "code": "427",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Personnel, oppositions sur salaires",
+          "libelle_ar": "المستخدمون - الاعتراضات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Personnel, oppositions",
+          "libelle_ar": "المستخدمون، الاعتراضات على الأجور"
+        }
+      },
+      {
+        "code": "428",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Personnel, charges à payer et produits à recevoir",
+          "libelle_ar": "المستخدمون - الأعباء والمنتوجات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Personnel > Charges à payer et produits à recevoir",
+          "libelle_ar": "المستخدمون، الأعباء الواجب دفعها والمنتوجات المطلوب استلامها"
+        }
+      },
+      {
+        "code": "431",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Sécurité sociale",
+          "libelle_ar": "الضمان الاجتماعي"
+        },
+        "onca_capture": {
+          "libelle_fr": "Sécurité social",
+          "libelle_ar": "الضمان الاجتماعي"
+        }
+      },
+      {
+        "code": "438",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Organismes sociaux, charges à payer et produits à recevoir",
+          "libelle_ar": "الهيئات الاجتماعية - الأعباء والمنتوجات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Organismes sociaux, charges à payer et produits à recevoir",
+          "libelle_ar": "الهيئات الاجتماعية، الأعباء الواجب دفعها والمنتوجات المطلوب استلامها"
+        }
+      },
+      {
+        "code": "44",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "État, collectivités publiques, organismes internationaux et comptes rattachés",
+          "libelle_ar": "الدولة، الجماعات العمومية، الهيئات الدولية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Etat et autres collectivités publiques, subventions à recevoir",
+          "libelle_ar": "الدولة، الجماعات العمومية، الهيئات الدولية والحسابات الملحقة"
+        }
+      },
+      {
+        "code": "441",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "État et autres collectivités publiques, subventions à recevoir",
+          "libelle_ar": "الدولة - الإعانات المطلوب استلامها"
+        },
+        "onca_capture": {
+          "libelle_fr": "Etat et autres collectivités publiques, subventions à recevoir",
+          "libelle_ar": "الدولة والجماعات العمومية الأخرى، الإعانات المطلوب استلامها"
+        }
+      },
+      {
+        "code": "442",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "État, impôts et taxes recouvrables sur des tiers",
+          "libelle_ar": "الدولة - الضرائب القابلة للتحصيل"
+        },
+        "onca_capture": {
+          "libelle_fr": "Etat, impôts et taxes recouvrables sur des tiers",
+          "libelle_ar": "الدولة، الضرائب والرسوم القابلة للتحصيل من أطراف أخرى"
+        }
+      },
+      {
+        "code": "443",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Opérations particulières avec l'État et les collectivités publiques",
+          "libelle_ar": "العمليات الخاصة مع الدولة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Opérations particulières avec l'Etat et les collectivités publiques",
+          "libelle_ar": "العمليات الخاصة مع الدولة والجماعات العمومية"
+        }
+      },
+      {
+        "code": "444",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "État, impôts sur les résultats",
+          "libelle_ar": "الدولة - الضرائب على النتائج"
+        },
+        "onca_capture": {
+          "libelle_fr": "Etat, impôts sur les résultats",
+          "libelle_ar": "الدولة، الضرائب على النتائج"
+        }
+      },
+      {
+        "code": "445",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "État, taxes sur le chiffre d'affaires",
+          "libelle_ar": "الدولة - الرسوم على رقم الأعمال"
+        },
+        "onca_capture": {
+          "libelle_fr": "Etat, taxes sur le chiffre d'affaires",
+          "libelle_ar": "الدولة، الرسوم على رقم الأعمال"
+        }
+      },
+      {
+        "code": "4456",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "TVA collectée / TVA déductible",
+          "libelle_ar": "الرسم على القيمة المضافة المحصلة والقابلة للخصم"
+        },
+        "onca_capture": {
+          "libelle_fr": "TVA récupérable & précompte",
+          "libelle_ar": "الرسم عن القيمة المضافة القابلة للاسترجاع و القرض الضريبي"
+        }
+      },
+      {
+        "code": "447",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Autres impôts, taxes et versements assimilés",
+          "libelle_ar": "الضرائب والرسوم الأخرى"
+        },
+        "onca_capture": {
+          "libelle_fr": "Autres impôts, taxes et versements assimilés",
+          "libelle_ar": "الضرائب الأخرى والرسوم والتسديدات المماثلة"
+        }
+      },
+      {
+        "code": "448",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "État, charges à payer et produits à recevoir",
+          "libelle_ar": "الدولة - الأعباء والمنتوجات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Etat, charges à payer et produits à recevoir (hors impôts)",
+          "libelle_ar": "الدولة، الأعباء الواجب دفعها والمنتوجات المطلوب استلامها"
+        }
+      },
+      {
+        "code": "455",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Associés, comptes courants",
+          "libelle_ar": "الشركاء - الحسابات الجارية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Associés - comptes courants",
+          "libelle_ar": "الشركاء، الحسابات الجارية"
+        }
+      },
+      {
+        "code": "456",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Associés, opérations sur le capital",
+          "libelle_ar": "الشركاء - العمليات عن رأس المال"
+        },
+        "onca_capture": {
+          "libelle_fr": "Associés – Opérations sur le capital",
+          "libelle_ar": "الشركاء، العمليات على رأس المال"
+        }
+      },
+      {
+        "code": "457",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Associés, dividendes à payer",
+          "libelle_ar": "الشركاء - أرباح الأسهم"
+        },
+        "onca_capture": {
+          "libelle_fr": "Associés, dividendes à payer",
+          "libelle_ar": "الشركاء، الحصص الواجب دفعها"
+        }
+      },
+      {
+        "code": "458",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Associés, opérations faites en commun ou en groupement",
+          "libelle_ar": "الشركاء - العمليات المشتركة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Associés – Opérations faites en commun ou en groupement",
+          "libelle_ar": "الشركاء، العمليات التي تمت بالاشتراك أو في تجمع"
+        }
+      },
+      {
+        "code": "462",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Créances sur cessions d'immobilisations",
+          "libelle_ar": "الحسابات الدائنة عن التنازل عن تثبيتات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Créances sur cessions d'immobilisations",
+          "libelle_ar": "الحسابات الدائنة عن عمليات التنازل عن التثبيتات"
+        }
+      },
+      {
+        "code": "464",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Dettes sur acquisitions de valeurs mobilières de placement et instruments financiers dérivés",
+          "libelle_ar": "الديون عن اقتناء قيم منقولة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Dettes sur acquisitions valeurs mobilières de placement et instruments financiers dérivés",
+          "libelle_ar": "الديون عن عمليات اقتناء قيم منقولة توظيفية، وأدوات مالية مشتقة"
+        }
+      },
+      {
+        "code": "465",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Créances sur cessions de valeurs mobilières de placement et instruments financiers dérivés",
+          "libelle_ar": "الحسابات الدائنة عن التنازل عن قيم منقولة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Créances sur cessions valeurs mobilières de placement et instruments financiers dérivés",
+          "libelle_ar": "الحسابات الدائنة عن عمليات التنازل عن قيم منقولة توظيفية، وأدوات مالية مشتقة"
+        }
+      },
+      {
+        "code": "468",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Diverses charges à payer et produits à recevoir",
+          "libelle_ar": "الأعباء والمنتوجات المتنوعة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Diverses charges à payer et produits à recevoir",
+          "libelle_ar": "الأعباء الأخرى الواجب دفعها والمنتوجات المطلوب استلامها"
+        }
+      },
+      {
+        "code": "48",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Charges ou produits constatés d'avance et provisions",
+          "libelle_ar": "الأعباء أو المنتوجات المعاينة مسبقا"
+        },
+        "onca_capture": {
+          "libelle_fr": "Charges ou produits constatés d’avance et provisions.",
+          "libelle_ar": "الأعباء أو المنتجات المعاينة مسبقا والمؤونات"
+        }
+      },
+      {
+        "code": "481",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Provisions, passifs courants",
+          "libelle_ar": "المؤونات - الخصوم الجارية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Provisions - passifs courants",
+          "libelle_ar": "المؤونات - الخصوم الجارية"
+        }
+      },
+      {
+        "code": "495",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur comptes du groupe et sur associés",
+          "libelle_ar": "خسائر القيمة عن حسابات المجمع"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes de valeur sur comptes du groupe et sur associés",
+          "libelle_ar": "خسائر القيمة عن حسابات المجمع والشركاء"
+        }
+      },
+      {
+        "code": "496",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur comptes de débiteurs divers",
+          "libelle_ar": "خسائر القيمة عن حسابات مدينين"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes de valeur sur comptes de débiteurs divers",
+          "libelle_ar": "خسائر القيمة عن حسابات مدينين مختلفين"
+        }
+      },
+      {
+        "code": "498",
+        "class_code": "4",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur autres comptes de tiers",
+          "libelle_ar": "خسائر القيمة عن حسابات أخرى"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes de valeur sur autres comptes de tiers",
+          "libelle_ar": "خسائر القيمة عن حسابات أخرى للغير"
+        }
+      },
+      {
+        "code": "503",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Autres actions ou titres conférant un droit de propriété",
+          "libelle_ar": "الأسهم الأخرى"
+        },
+        "onca_capture": {
+          "libelle_fr": "Autres actions ou titres conférant un droit de propriété",
+          "libelle_ar": "الأسهم الأخرى او السندات المخولة حقا في الملكية"
+        }
+      },
+      {
+        "code": "506",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Obligations, bons du Trésor et bons de caisse à court terme",
+          "libelle_ar": "السندات وقسائم الخزينة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Obligations, bons du trésor et bons de caisse à court terme",
+          "libelle_ar": "السندات، قسائم الخزينة وقسائم الصندوق القصيرة الاجل"
+        }
+      },
+      {
+        "code": "508",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Autres valeurs mobilières de placement et créances assimilées",
+          "libelle_ar": "قيم التوظيف المنقولة الأخرى"
+        },
+        "onca_capture": {
+          "libelle_fr": "Autres valeurs mobilières de placement et créances assimilés",
+          "libelle_ar": "قيم التوظيف المنقولة الأخرى و الحسابات الدائنة المماثلة"
+        }
+      },
+      {
+        "code": "509",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Versements restant à effectuer sur valeurs mobilières de placement non libérées",
+          "libelle_ar": "التسديدات الباقية عن قيم التوظيف"
+        },
+        "onca_capture": {
+          "libelle_fr": "Versements restant à effectuer sur valeurs mobilières de placement non libérées",
+          "libelle_ar": "التسديدات الباقي القيام بها عن قيم التوظيف المنقولة غير المسددة"
+        }
+      },
+      {
+        "code": "51",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Banques, établissements financiers et assimilés",
+          "libelle_ar": "البنوك والمؤسسات المالية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Banques, établissements financiers et assimilés.",
+          "libelle_ar": "البنوك والمؤسسات المالية وما يماثلها"
+        }
+      },
+      {
+        "code": "511",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Valeurs à l'encaissement",
+          "libelle_ar": "قيم التحصيل"
+        },
+        "onca_capture": {
+          "libelle_fr": "Valeurs à encaissées",
+          "libelle_ar": "قيم التحصيل"
+        }
+      },
+      {
+        "code": "512",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Banques, comptes courants",
+          "libelle_ar": "بنوك، الحسابات الجارية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Banques comptes courants",
+          "libelle_ar": "بنوك الحسابات الجارية"
+        }
+      },
+      {
+        "code": "515",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Trésor public et établissements publics",
+          "libelle_ar": "الخزينة العمومية والمؤسسات العمومية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Trésor public et établissements publics",
+          "libelle_ar": "الخزينة العمومية و المؤسسات العمومية"
+        }
+      },
+      {
+        "code": "54",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Régies d'avances et accréditifs",
+          "libelle_ar": "وكالات التسبيقات والاعتمادات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Régies d’avances et accréditifs.",
+          "libelle_ar": "وكلات التسبيقات المشتقة"
+        }
+      },
+      {
+        "code": "55",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "(Disponible)",
+          "libelle_ar": "(متاح)"
+        },
+        "onca_capture": {
+          "libelle_fr": "Disponible",
+          "libelle_ar": "متاح"
+        }
+      },
+      {
+        "code": "56",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "(Disponible)",
+          "libelle_ar": "(متاح)"
+        },
+        "onca_capture": {
+          "libelle_fr": "Disponible",
+          "libelle_ar": "متاح"
+        }
+      },
+      {
+        "code": "57",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "(Disponible)",
+          "libelle_ar": "(متاح)"
+        },
+        "onca_capture": {
+          "libelle_fr": "Disponible",
+          "libelle_ar": "متاح"
+        }
+      },
+      {
+        "code": "58",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Virements internes",
+          "libelle_ar": "التحويلات الداخلية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Virements internes.",
+          "libelle_ar": "التحويلات المالية"
+        }
+      },
+      {
+        "code": "588",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Autres virements internes",
+          "libelle_ar": "تحويلات داخلية أخرى"
+        },
+        "onca_capture": {
+          "libelle_fr": "Autres virements internes",
+          "libelle_ar": "التحويلات الداخلية الأخرى"
+        }
+      },
+      {
+        "code": "59",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur actifs financiers courants",
+          "libelle_ar": "خسائر القيمة عن الأصول المالية الجارية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes de valeur sur actifs financiers courants.",
+          "libelle_ar": "خسائر القيمة عن الأصول الجارية الجارية"
+        }
+      },
+      {
+        "code": "591",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur valeurs en banque et établissements financiers",
+          "libelle_ar": "خسائر القيمة عن القيم المودعة في البنوك"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes de valeur sur valeurs en banque et Etablissements financiers",
+          "libelle_ar": "خسائر القيمة عن القيم المودعة في البنوك والمؤسسات المالية"
+        }
+      },
+      {
+        "code": "594",
+        "class_code": "5",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes de valeur sur régies d'avances et accréditifs",
+          "libelle_ar": "خسائر القيمة عن وكالات التسبيقات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes de valeurs sur régies d'avances et accréditifs",
+          "libelle_ar": "خسائر القيمة عن الكفالات المالية للتسبيقات والاعتمادات"
+        }
+      },
+      {
+        "code": "602",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Autres approvisionnements",
+          "libelle_ar": "التموينات الأخرى"
+        },
+        "onca_capture": {
+          "libelle_fr": "Autres approvisionnements consommés",
+          "libelle_ar": "التموينات الأخرى"
+        }
+      },
+      {
+        "code": "603",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Variations des stocks",
+          "libelle_ar": "تغيرات المخزونات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Variations des stocks",
+          "libelle_ar": "تغيرات المخزون"
+        }
+      },
+      {
+        "code": "604",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Achats d'études et de prestations de services",
+          "libelle_ar": "مشتريات الدراسات والخدمات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Achats d'études et de prestations de services",
+          "libelle_ar": "مشتريات الدراسات و الخدمات المؤداة"
+        }
+      },
+      {
+        "code": "605",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Achats de matériels, équipements et travaux",
+          "libelle_ar": "مشتريات المعدات والأشغال"
+        },
+        "onca_capture": {
+          "libelle_fr": "Achats de matériels, équipements et travaux",
+          "libelle_ar": "مشتريات المعدات و التجهيزات و الاشغال"
+        }
+      },
+      {
+        "code": "607",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Achats non stockés de matières et fournitures",
+          "libelle_ar": "مشتريات غير مخزنة من المواد واللوازم"
+        },
+        "onca_capture": {
+          "libelle_fr": "Achats non stockés de matières et fournitures",
+          "libelle_ar": "المشتريات غير المخزنة من المواد و اللوازم"
+        }
+      },
+      {
+        "code": "609",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Rabais, remises et ristournes obtenus sur achats",
+          "libelle_ar": "التخفيضات عن مشتريات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Rabais, remises, ristournes obtenus sur achats",
+          "libelle_ar": "التخفيضات , و التنزيلات , و الحسومات المتحصل عليها من المشتريات"
+        }
+      },
+      {
+        "code": "614",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Charges locatives et charges de copropriété",
+          "libelle_ar": "الأعباء الإيجارية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Charges locatives et charges de copropriété",
+          "libelle_ar": "الأعباء الايجارية و أعباء الملكية المشتركة"
+        }
+      },
+      {
+        "code": "615",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Entretien, réparations et maintenance",
+          "libelle_ar": "الصيانة والتصليحات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Entretien, réparations et maintenance",
+          "libelle_ar": "الصيانة و التصليحات , و الرعاية"
+        }
+      },
+      {
+        "code": "617",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Études et recherches",
+          "libelle_ar": "الدراسات والأبحاث"
+        },
+        "onca_capture": {
+          "libelle_fr": "Etudes et recherches",
+          "libelle_ar": "الدراسات و الأبحاث"
+        }
+      },
+      {
+        "code": "618",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Documentation et divers",
+          "libelle_ar": "التوثيق والمستجدات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Documentation et divers",
+          "libelle_ar": "التوثيق و المستجدات"
+        }
+      },
+      {
+        "code": "619",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Rabais, remises, ristournes obtenus sur services extérieurs",
+          "libelle_ar": "التخفيضات عن خدمات خارجية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Rabais, remises, ristournes obtenus sur services extérieurs",
+          "libelle_ar": "التنزيلات و التخفيضات و الحسومات المتحصل عليها عن خدمات خارجية"
+        }
+      },
+      {
+        "code": "621",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Personnel extérieur à l'entreprise",
+          "libelle_ar": "العاملون الخارجيون"
+        },
+        "onca_capture": {
+          "libelle_fr": "Personnel extérieur a l'entreprise",
+          "libelle_ar": "العاملون الخارجيون عن المؤسسة"
+        }
+      },
+      {
+        "code": "622",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Rémunérations d'intermédiaires et honoraires",
+          "libelle_ar": "أجور الوسطاء والأتعاب"
+        },
+        "onca_capture": {
+          "libelle_fr": "Rémunérations d'intermédiaires et honoraires",
+          "libelle_ar": "أجور الوسطاء و الاتعاب"
+        }
+      },
+      {
+        "code": "623",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Publicité, publication, relations publiques",
+          "libelle_ar": "الإشهار والنشر"
+        },
+        "onca_capture": {
+          "libelle_fr": "Publicité, publication, relations publiques",
+          "libelle_ar": "الاشهار و النشر و العلاقات العمومية"
+        }
+      },
+      {
+        "code": "624",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Transports de biens et transport collectif du personnel",
+          "libelle_ar": "نقل السلع والمستخدمين"
+        },
+        "onca_capture": {
+          "libelle_fr": "Transports de biens et transport collectif du personnel",
+          "libelle_ar": "نقل السلع و النقل الجماعي للمستخدمين"
+        }
+      },
+      {
+        "code": "625",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Déplacements, missions et réceptions",
+          "libelle_ar": "التنقلات والمهمات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Déplacements, missions et réceptions",
+          "libelle_ar": "التنقلات و المهمات و الاستقبالات"
+        }
+      },
+      {
+        "code": "626",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Frais postaux et de télécommunications",
+          "libelle_ar": "مصاريف البريد والاتصالات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Frais postaux et de télécommunications",
+          "libelle_ar": "مصاريف البريد و الاتصالات السلكية و اللاسلكية"
+        }
+      },
+      {
+        "code": "627",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Services bancaires et assimilés",
+          "libelle_ar": "الخدمات المصرفية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Services bancaires et assimilés",
+          "libelle_ar": "الخدمات المصرفية و ما شابهها"
+        }
+      },
+      {
+        "code": "628",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Cotisations et divers",
+          "libelle_ar": "الاشتراكات والمستجدات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Cotisations et divers",
+          "libelle_ar": "الاشتراكات و المستجدات"
+        }
+      },
+      {
+        "code": "629",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Rabais, remises, ristournes obtenus sur autres services extérieurs",
+          "libelle_ar": "التخفيضات عن الخدمات الأخرى"
+        },
+        "onca_capture": {
+          "libelle_fr": "Rabais, remises, ristournes obtenus sur autres services extérieurs",
+          "libelle_ar": "التخفيضات , و التنزيلات , و الحسومات المتحصل عليها عن الخدمات الخارجية الأخرى"
+        }
+      },
+      {
+        "code": "635",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Cotisations aux organismes sociaux",
+          "libelle_ar": "الاشتراكات للهيئات الاجتماعية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Cotisations aux organismes sociaux",
+          "libelle_ar": "الاشتراكات المدفوعة للهيئات الاجتماعية"
+        }
+      },
+      {
+        "code": "636",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Charges sociales de l'exploitant individuel",
+          "libelle_ar": "الأعباء الاجتماعية للمستغل"
+        },
+        "onca_capture": {
+          "libelle_fr": "Charges sociales de l'exploitant individuel",
+          "libelle_ar": "الأعباء الاجتماعبة للمستغل الفردي"
+        }
+      },
+      {
+        "code": "64",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Impôts, taxes et versements assimilés",
+          "libelle_ar": "الضرائب والرسوم والمدفوعات المماثلة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Impôts, taxes et versements assimilés.",
+          "libelle_ar": "الضرائب و الرسوم و المدفوعات المماثلة"
+        }
+      },
+      {
+        "code": "641",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Impôts, taxes et versements assimilés sur rémunérations",
+          "libelle_ar": "الضرائب على الأجور"
+        },
+        "onca_capture": {
+          "libelle_fr": "Impôts, taxes et versements assimilés sur rémunérations",
+          "libelle_ar": "الضرائب و الرسوم و المدفوعات المماثلة عن الأجور"
+        }
+      },
+      {
+        "code": "642",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Impôts et taxes non récupérables sur chiffre d'affaires",
+          "libelle_ar": "الضرائب غير المسترجعة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Impôts et taxes non récupérables sur chiffre d’affaires",
+          "libelle_ar": "الضرائب و الرسوم غير المسترجعة عن رقم الاعمال"
+        }
+      },
+      {
+        "code": "645",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Autres impôts et taxes (hors impôts sur les résultats)",
+          "libelle_ar": "الضرائب والرسوم الأخرى"
+        },
+        "onca_capture": {
+          "libelle_fr": "Autres impôts et taxes (hors impôts sur les résultats)",
+          "libelle_ar": "الضرائب و الرسوم الأخرى ( خارج الضرائب عن النتائج )"
+        }
+      },
+      {
+        "code": "651",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Redevances pour concessions, brevets, licences, logiciels, droits et valeurs similaires",
+          "libelle_ar": "الأتاوى عن الامتيازات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Redevances pour concessions, brevets, licences, logiciels, droits et valeurs similaires",
+          "libelle_ar": "الاتاوى المترتبة على الامتيازات و البراءات و الرخص و برامج المعلوماتية و الحقوق و القيم المماثلة"
+        }
+      },
+      {
+        "code": "652",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Moins-values sur sortie d'actifs immobilisés non financiers",
+          "libelle_ar": "نواقص القيمة عن خروج أصول"
+        },
+        "onca_capture": {
+          "libelle_fr": "Moins-values sur sortie d'actifs immobilisés non financiers",
+          "libelle_ar": "نواقص القيم عن خروج أصول مثبتة غير مالية"
+        }
+      },
+      {
+        "code": "653",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Jetons de présence",
+          "libelle_ar": "أتعاب حضور"
+        },
+        "onca_capture": {
+          "libelle_fr": "Jetons de présence et tantièmes aux administrateurs",
+          "libelle_ar": "أتعاب الحضور لأعضاء مجلس الإدارة"
+        }
+      },
+      {
+        "code": "654",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes sur créances irrécouvrables",
+          "libelle_ar": "خسائر عن ديون غير قابلة للتحصيل"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes sur créances irrécouvrables",
+          "libelle_ar": "خسائر عن حسابات دائنة غير قابلة للتحصيل"
+        }
+      },
+      {
+        "code": "655",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Quote-part de résultat sur opérations faites en commun",
+          "libelle_ar": "قسط النتائج عن عمليات مشتركة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Quote-part de résultat sur opérations faites en commun",
+          "libelle_ar": "قسط النتائج عن العمليات المنجزة بصورة مشتركة"
+        }
+      },
+      {
+        "code": "656",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Amendes et pénalités, subventions accordées, dons et libéralités",
+          "libelle_ar": "الغرامات والعقوبات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Amendes et pénalités, subventions accordés, dons et libéralités",
+          "libelle_ar": "الغرامات و العقوبات و الإعانات الممنوحة و الهبات و التبرعات"
+        }
+      },
+      {
+        "code": "657",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Charges exceptionnelles de gestion courante",
+          "libelle_ar": "الأعباء الاستثنائية للتسيير"
+        },
+        "onca_capture": {
+          "libelle_fr": "Charges exceptionnelles de gestion courante",
+          "libelle_ar": "الأعباء الاستثنائية للتسيير الجاري"
+        }
+      },
+      {
+        "code": "664",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes sur créances liées à des participations",
+          "libelle_ar": "الخسائر عن الحسابات المرتبطة بمساهمات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes sur créances liées à des participations",
+          "libelle_ar": "الخسائر عن الحسابات الدائنة المرتبطة بمساهمات"
+        }
+      },
+      {
+        "code": "665",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Écart d'évaluation sur actifs financiers - moins-values",
+          "libelle_ar": "فارق التقييم - نواقص القيمة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Ecartd’évaluationsuractifsfinanciers- moins-values",
+          "libelle_ar": "فارق التقييم عن أصول مالية -نواقص القيم"
+        }
+      },
+      {
+        "code": "667",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Pertes nettes sur cessions d'actifs financiers",
+          "libelle_ar": "الخسائر الصافية عن التنازل"
+        },
+        "onca_capture": {
+          "libelle_fr": "Pertes nettes sur cessions d’actifs financiers",
+          "libelle_ar": "الخسائر الصافية عن التنازل عن الأصول المالية"
+        }
+      },
+      {
+        "code": "68",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Dotations aux amortissements, provisions et pertes de valeur",
+          "libelle_ar": "المخصصات للاهتلاكات والمؤونات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Dotations aux amortissements, provisions et pertes de valeur.",
+          "libelle_ar": "المخصصات للاهتلاكات و المؤونات و خسائر القيمة"
+        }
+      },
+      {
+        "code": "681",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Dotations aux amortissements, provisions et pertes de valeur, actifs non courants",
+          "libelle_ar": "المخصصات - الأصول غير الجارية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Dotations aux amortissements, provisions et pertes de valeur, actifs non courants",
+          "libelle_ar": "المخصصات للاهتلاكات و المؤونات و خسائر القيمة و الأصول غير الجارية"
+        }
+      },
+      {
+        "code": "682",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Dotations aux amortissements, provisions et pertes de valeur des biens mis en concession",
+          "libelle_ar": "المخصصات - السلع الموضوعة موضع الامتياز"
+        },
+        "onca_capture": {
+          "libelle_fr": "Dotations aux amortissements, provisions et pertes de valeur des biens mis en concession",
+          "libelle_ar": "المخصصات للاهتلاكات و المؤونات و خسائر قيمة السلع الموضوعة موضع الامتياز"
+        }
+      },
+      {
+        "code": "685",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Dotations aux amortissements, provisions et pertes de valeur, actifs courants",
+          "libelle_ar": "المخصصات - الأصول الجارية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Dotations aux amortissements, provisions et pertes de valeur, actifs courants",
+          "libelle_ar": "المخصصات للاهتلاكات و المؤونات و خسائر القيمة -الأصول الجارية"
+        }
+      },
+      {
+        "code": "686",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Dotations aux amortissements, provisions et pertes de valeur, éléments financiers",
+          "libelle_ar": "المخصصات - العناصر المالية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Dotations aux amortissements, provisions et pertes de valeur, éléments financiers",
+          "libelle_ar": "المخصصات للاهتلاكات و المؤونات و خسائر القيمة - العناصر المالية"
+        }
+      },
+      {
+        "code": "69",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Impôts sur les résultats et assimilés",
+          "libelle_ar": "الضرائب عن النتائج وما يماثلها"
+        },
+        "onca_capture": {
+          "libelle_fr": "Impôts sur les résultats et assimilés.",
+          "libelle_ar": "الضرائب على النتائج و ما يماثلها"
+        }
+      },
+      {
+        "code": "692",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Imposition différée actif",
+          "libelle_ar": "فرض الضريبة المؤجلة عن الأصول"
+        },
+        "onca_capture": {
+          "libelle_fr": "Imposition différée actif",
+          "libelle_ar": "فرض الضريبة المؤجلة على الأصول"
+        }
+      },
+      {
+        "code": "693",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Imposition différée passif",
+          "libelle_ar": "فرض الضريبة المؤجلة عن الخصوم"
+        },
+        "onca_capture": {
+          "libelle_fr": "Imposition différée passif",
+          "libelle_ar": "فرض الضريبة المؤجلة على الخصوم"
+        }
+      },
+      {
+        "code": "695",
+        "class_code": "6",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Impôts sur les bénéfices basés sur le résultat des activités ordinaires",
+          "libelle_ar": "الضرائب على الأرباح"
+        },
+        "onca_capture": {
+          "libelle_fr": "Impôts sur les bénéfices basés sur le résultat des activités ordinaires",
+          "libelle_ar": "الضرائب عن الأرباح المبنية على نتائج الأنشطة العادية"
+        }
+      },
+      {
+        "code": "70",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Ventes de marchandises, de produits fabriqués, de prestations de services et produits annexes",
+          "libelle_ar": "المبيعات من البضائع والمنتجات والخدمات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Ventes de marchandises, de produits fabriqués de prestations de services et produits annexes.",
+          "libelle_ar": "المبيعات من البضائع و المنتجات المصنعة , و الخدمات المقدمة و المنتوجات و الملحقة"
+        }
+      },
+      {
+        "code": "701",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Ventes de produits finis",
+          "libelle_ar": "المبيعات من المنتوجات التامة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Ventes de produits finis",
+          "libelle_ar": "المبيعات من المنتوجات التامة المصنعة"
+        }
+      },
+      {
+        "code": "702",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Ventes de produits intermédiaires",
+          "libelle_ar": "المبيعات من المنتوجات الوسيطة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Ventes de produits intermédiaires",
+          "libelle_ar": "المبيعات من المنتجات الوسيطة"
+        }
+      },
+      {
+        "code": "703",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Ventes de produits résiduels",
+          "libelle_ar": "المبيعات من المنتوجات المتبقية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Ventes de produits résiduels",
+          "libelle_ar": "المبيعات من المنتجات المتبقية"
+        }
+      },
+      {
+        "code": "706",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Autres prestations de services",
+          "libelle_ar": "تقديم الخدمات الأخرى"
+        },
+        "onca_capture": {
+          "libelle_fr": "Vente prestations de services",
+          "libelle_ar": "تقديم الخدمات الأخرى"
+        }
+      },
+      {
+        "code": "709",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Rabais, remises et ristournes accordés",
+          "libelle_ar": "التخفيضات الممنوحة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Rabais, remises et ristournes accordés",
+          "libelle_ar": "التخفيضات و التنزيلات و الحسومات الممنوحة"
+        }
+      },
+      {
+        "code": "72",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Production immobilisée",
+          "libelle_ar": "الإنتاج المثبت"
+        },
+        "onca_capture": {
+          "libelle_fr": "Production stockée ou déstockée.",
+          "libelle_ar": "الإنتاج المخزن او المنتقص من المخزون"
+        }
+      },
+      {
+        "code": "723",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Variation de stocks d'encours",
+          "libelle_ar": "تغيّر المخزونات الجارية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Variation de stocks d'en-cours",
+          "libelle_ar": "تغير المخزونات الجارية"
+        }
+      },
+      {
+        "code": "751",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Redevances pour concessions, brevets, licences, logiciels et valeurs similaires",
+          "libelle_ar": "الأتاوى عن الامتياز والبراءات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Redevances pour concessions, brevets, licences, logiciels et valeurs similaires",
+          "libelle_ar": "الاتاوى عن الامتياز و البراءات و التراخيص و برامج المعلوماتية و القيم المماثلة"
+        }
+      },
+      {
+        "code": "752",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Plus-values sur sorties d'actifs immobilisés non financiers",
+          "libelle_ar": "فوائض القيمة عن خروج الأصول"
+        },
+        "onca_capture": {
+          "libelle_fr": "Plus values sur sorties d’actifs immobilisés non financiers",
+          "libelle_ar": "فوائض القيمة عن خروج الأصول المثبتة غير المالية"
+        }
+      },
+      {
+        "code": "753",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Jetons de présence et rémunérations d'administrateurs ou de gérants",
+          "libelle_ar": "أتعاب الحضور"
+        },
+        "onca_capture": {
+          "libelle_fr": "Jetons de présence et rémunérations d'administrateurs ou de gérant",
+          "libelle_ar": "اتعاب الحضور و اتعاب الإداريين او المسير"
+        }
+      },
+      {
+        "code": "754",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Quotes-parts de subventions d'investissement virées au résultat de l'exercice",
+          "libelle_ar": "أقساط إعانات الاستثمار"
+        },
+        "onca_capture": {
+          "libelle_fr": "Quotes-parts de subventions d’investissement virées au résultat de l’exercice",
+          "libelle_ar": "أقساط اعانات الاستثمار المحولة لنتيجة السنة المالية"
+        }
+      },
+      {
+        "code": "755",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Quote-part de résultat sur opérations faites en commun",
+          "libelle_ar": "قسط النتيجة عن العمليات المشتركة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Quote-part de résultat sur opérations faites en commun",
+          "libelle_ar": "قسط النتيجة عن العمليات التي تمت بصورة مشتركة"
+        }
+      },
+      {
+        "code": "756",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Rentrées sur créances amorties",
+          "libelle_ar": "المدخولات عن الحسابات المهتلكة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Rentrées sur créances amorties",
+          "libelle_ar": "المدخولات عن الحسابات الدائنة المهتلكة"
+        }
+      },
+      {
+        "code": "757",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Produits exceptionnels sur opérations de gestion",
+          "libelle_ar": "المنتوجات الاستثنائية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Produits exceptionnels sur opérations de gestion",
+          "libelle_ar": "المنتوجات الاستثنائية عن عمليات التسيير"
+        }
+      },
+      {
+        "code": "761",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Produits des participations",
+          "libelle_ar": "منتوجات المساهمات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Produits de participations",
+          "libelle_ar": "منتوجات المساهمات"
+        }
+      },
+      {
+        "code": "765",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Écart d'évaluation sur actifs financiers, plus-values",
+          "libelle_ar": "فارق التقييم - فوائض القيمة"
+        },
+        "onca_capture": {
+          "libelle_fr": "Ecart d’évaluation sur actifs financiers – Plus-values",
+          "libelle_ar": "فارق التقييم عن الأصول المالية -فوائض القيمة"
+        }
+      },
+      {
+        "code": "768",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_fr"
+        ],
+        "file": {
+          "libelle_fr": "Autres produits financiers",
+          "libelle_ar": "المنتوجات المالية الأخرى"
+        },
+        "onca_capture": {
+          "libelle_fr": "Profits nets sur cessions d’actifs financiers",
+          "libelle_ar": "المنتوجات المالية الأخرى"
+        }
+      },
+      {
+        "code": "78",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Reprises sur pertes de valeur et provisions",
+          "libelle_ar": "الاسترجاعات عن خسائر القيمة والمؤونات"
+        },
+        "onca_capture": {
+          "libelle_fr": "Reprises sur pertes de valeur et provisions.",
+          "libelle_ar": "الاسترجاعات عن خسائر القيمة و المؤونات"
+        }
+      },
+      {
+        "code": "781",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Reprises d'exploitation sur pertes de valeur et provisions - actifs non courants",
+          "libelle_ar": "استرجاعات الاستغلال - الأصول غير الجارية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Reprises d'exploitation sur pertes de valeur et provisions - actifs non courants",
+          "libelle_ar": "استرجاعات الاستغلال عن خسائر القيمة و المؤونات- الأصول غير الجارية"
+        }
+      },
+      {
+        "code": "785",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Reprises d'exploitation sur pertes de valeur et provisions - actifs courants",
+          "libelle_ar": "استرجاعات الاستغلال - الأصول الجارية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Reprises d'exploitation sur pertes de valeur et provisions - actifs courants",
+          "libelle_ar": "الاسترجاعات المالية عن خسائر القيمة و المؤونات"
+        }
+      },
+      {
+        "code": "786",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "Reprises financières sur pertes de valeur et provisions",
+          "libelle_ar": "الاسترجاعات المالية"
+        },
+        "onca_capture": {
+          "libelle_fr": "Reprises financières sur pertes de valeur et provisions",
+          "libelle_ar": "استرجاعات القيمة المالية لخسائر القيمة والمؤونات"
+        }
+      },
+      {
+        "code": "79",
+        "class_code": "7",
+        "differing_fields": [
+          "libelle_fr",
+          "libelle_ar"
+        ],
+        "file": {
+          "libelle_fr": "(Disponible)",
+          "libelle_ar": "(متاح)"
+        },
+        "onca_capture": {
+          "libelle_fr": "Disponible",
+          "libelle_ar": "متاح"
+        }
+      }
+    ],
+    "ecarts_de_reference_a_garder_distincts": [
+      {
+        "code": "14",
+        "fichier": "(Disponible)",
+        "joradp_cadre_312": "(Disponible)",
+        "onca_capture": "Plus values de cession à réinvestir",
+        "interpretation": "Conserver les champs associés à leur source; la page ONCA et le cadre obligatoire du JORADP ne sont pas interchangeables."
+      },
+      {
+        "code": "24",
+        "fichier": "(Disponible)",
+        "joradp_cadre_312": "(Disponible)",
+        "onca_capture": "Actifs biologiques",
+        "interpretation": "Conserver les champs associés à leur source; la page ONCA et le cadre obligatoire du JORADP ne sont pas interchangeables."
+      },
+      {
+        "code": "44",
+        "fichier": "État, collectivités publiques, organismes internationaux et comptes rattachés",
+        "joradp_cadre_312": "État, collectivités publiques, organismes internationaux et comptes rattachés",
+        "onca_capture": "Etat et autres collectivités publiques, subventions à recevoir",
+        "interpretation": "Conserver les champs associés à leur source; la page ONCA et le cadre obligatoire du JORADP ne sont pas interchangeables."
+      },
+      {
+        "code": "706",
+        "fichier": "Autres prestations de services",
+        "onca_capture": "Vente prestations de services",
+        "interpretation": "Différence de libellé avec la capture ONCA; ne pas la transformer en correction sans arbitrage de source."
+      }
+    ]
+  },
+  "constats_structurels_et_operations": {
+    "nature_soldes_et_parentage": {
+      "codes_a_arbitrer": [
+        "409",
+        "419",
+        "455",
+        "467",
+        "487"
+      ],
+      "note": "Réserve reprise du préflight R2; le YAML joint ne fournit pas root_type/report_type/postabilité ERPNext."
+    },
+    "donnees_personnelles_presentes": [
+      "metadata.auteur.nom",
+      "metadata.auteur.email",
+      "metadata.auteur.mobile"
+    ],
+    "diffusion": "Examiner et masquer/retirer les données personnelles avant toute diffusion ou inclusion dans une app cliente.",
+    "modifications_erpnext": [],
+    "installation_effectuee": false,
+    "deploiement_effectue": false
+  },
+  "anomalies_et_conflits": [
+    {
+      "id": "JO-CADRE-CLASSE-7",
+      "gravite": "majeure",
+      "categorie": "conflit_code_et_libelle_du_cadre_obligatoire",
+      "codes": [
+        "71",
+        "72",
+        "73"
+      ],
+      "fichier": {
+        "71": "Production stockée ou déstockée",
+        "72": "Production immobilisée",
+        "73": null,
+        "731": "Production immobilisée d’actifs incorporels (rangé sous 72)",
+        "732": "Production immobilisée d’actifs corporels (rangé sous 72)"
+      },
+      "joradp": {
+        "71": null,
+        "72": "Production stockée ou déstockée",
+        "73": "Production immobilisée"
+      },
+      "analyse": "Le cadre obligatoire du JORADP (312-3) énumère 72 puis 73; il n’énumère pas 71. Le fichier décale ces deux intitulés d’un code et omet 73. Les codes détaillés 731/732 ne peuvent pas être validés sous 72 à partir de cette nomenclature. Ne pas corriger sans décision documentée.",
+      "source_officielle": "https://www.joradp.dz/ftp/jo-francais/2009/f2009019.pdf"
+    },
+    {
+      "id": "JO-DETAIL-CODE-104",
+      "gravite": "majeure",
+      "categorie": "conflit_code_libelle",
+      "codes": [
+        "103",
+        "104"
+      ],
+      "fichier": {
+        "103": null,
+        "104": "Primes liées au capital social"
+      },
+      "joradp": {
+        "103": "Primes liées au capital social",
+        "104": "Ecart d’évaluation"
+      },
+      "analyse": "Le libellé du code 104 dans le fichier est associé au code 103 dans la nomenclature détaillée du JORADP; le code 103 manque du fichier.",
+      "source_officielle": "https://www.joradp.dz/ftp/jo-francais/2009/f2009019.pdf"
+    },
+    {
+      "id": "JO-DETAIL-CODE-167",
+      "gravite": "majeure",
+      "categorie": "conflit_code_libelle",
+      "codes": [
+        "167",
+        "171",
+        "172",
+        "173",
+        "178"
+      ],
+      "fichier": {
+        "167": "Dettes rattachées à des participations",
+        "171": "Dettes rattachées à des participations groupe"
+      },
+      "joradp": {
+        "167": "Dettes sur contrat de location-financement",
+        "171": "Dettes rattachées à des participations groupe"
+      },
+      "analyse": "Le code 167 est décrit différemment dans le texte joint et dans la nomenclature détaillée du JORADP. Les dettes rattachées à des participations figurent dans le groupe 17 du même texte officiel.",
+      "source_officielle": "https://www.joradp.dz/ftp/jo-francais/2009/f2009019.pdf"
+    },
+    {
+      "id": "JO-DETAIL-CODES-ABSENTS",
+      "gravite": "à_revoir",
+      "categorie": "éléments_détaillés_non_retrouvés_comme_codes_exacts",
+      "codes_omis_ou_non_enumeres": [
+        "103",
+        "107"
+      ],
+      "analyse": "Le JORADP énumère notamment 103 « Primes liées au capital social » et 107 « Ecart d’équivalence » dans le détail de la classe 1. L’absence dans cette liste source n’établit pas à elle seule une non-conformité globale; ces lignes doivent être traitées comme omissions du document candidat.",
+      "source_officielle": "https://www.joradp.dz/ftp/jo-francais/2009/f2009019.pdf"
+    },
+    {
+      "id": "ERP-TREE-MIXED-BALANCES",
+      "gravite": "bloquant_pour_import_sans_arbitrage",
+      "categorie": "parentage_et_nature_du_solde",
+      "codes": [
+        "409",
+        "419",
+        "455",
+        "467",
+        "487"
+      ],
+      "analyse": "Le fichier range les subdivisions sous des groupes à deux chiffres, mais ne renseigne ni parentage ERPNext explicite, ni root_type/report_type/postabilité. Les comptes 409 et 419 ont une nature inverse au groupe fournisseur/client auquel ils sont rangés; 455 et 467 peuvent porter des soldes débiteurs ou créditeurs; 487 est un produit constaté d’avance dans le groupe 48, qui contient aussi des charges constatées d’avance. Le préflight R2 antérieur exige un arbitrage professionnel avant la construction d’un chart installable.",
+      "source_interne": "/workspace/erpnext_pilot/plan_comptable_scf_onca_R2_preflight_2026-10-04/reports/decision_faisabilite_R2.md"
+    },
+    {
+      "id": "YAML-HIERARCHIE-PLATE",
+      "gravite": "bloquant_pour_import_sans_arbitrage",
+      "categorie": "structure_non_equivalente_a_un_arbre_erpnext",
+      "codes": [
+        "101",
+        "1011",
+        "1012",
+        "1013",
+        "280",
+        "2803",
+        "2804"
+      ],
+      "analyse": "Dans le YAML, les listes sous_comptes ne sont pas récursives : par exemple 101 et 1011 sont des entrées sœurs dans la liste de 10, et 280/2803/2804 sont sœurs dans la liste de 28. Le fichier ne spécifie donc pas un arbre de parents complet; toute hiérarchie par préfixe serait une reconstruction à valider."
+    }
+  ]
+}
