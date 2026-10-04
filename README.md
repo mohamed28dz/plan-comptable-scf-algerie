@@ -4,8 +4,8 @@ Plan comptable du Système Comptable Financier algérien (Loi 07-11 du 25/11/200
 
 ## Contenu
 
-- `plan-comptable-scf.yaml` — Version YAML
-- `plan-comptable-scf.json` — Version JSON
+- `plan_comptable_scf.yaml` — Version YAML
+- `plan_comptable_scf.json` — Version JSON
 - `fonctionnement-scf.yaml` — (si applicable)
 
 ## Structure
