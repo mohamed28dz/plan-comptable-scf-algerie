@@ -1,4 +1,3 @@
-```markdown
 # Plan Comptable SCF (Système Comptable Financier)
 
 Ce dépôt contient le Plan Comptable SCF (Système Comptable Financier), mis à disposition dans des formats de données structurés et lisibles par machine. Il est conçu pour être facilement intégré dans des applications logicielles, des scripts d'analyse financière ou des bases de données.
