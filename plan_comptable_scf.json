@@ -1,14 +1,10 @@
 {
-  "audit_id": "pasted_text_scf_candidate_2026-10-04",
+  "audit_id": "pasted_text_scf_candidate_2026-10-05",
   "langue": "fr",
   "document": {
-    "source_fournie": "/home/ubuntu/upload/pasted_content.txt",
-    "copie_yaml": "/workspace/erpnext_pilot/pasted_text_scf_candidate_2026-10-04/plan_comptable_scf_copie_fidele.yaml",
     "sha256_source": "093cc247766e061e60db33810b8c4bce2031b5c7e2884619bb1de7f573b74a20",
     "sha256_copie": "093cc247766e061e60db33810b8c4bce2031b5c7e2884619bb1de7f573b74a20",
     "copie_byte_a_byte_identique": true,
-    "taille_octets": 52594,
-    "lignes_source": 642,
     "syntaxe_yaml": "valide",
     "parseur": "PyYAML 6.0.3 (virtualenv ERPNext déjà présent; aucune installation)",
     "cles_racine": [
