@@ -10,8 +10,8 @@ metadata:
   reference_legale: "Loi 07-11 du 25 Novembre 2007 — Arrêté du 26 juillet 2008"
   autorite: "Conseil National de la Comptabilité (CNC) — Ministère des Finances"
   devise: "Dinar Algérien (DA)"
-  version: "1.00"
-  date: "2026.10.04"
+  version: "1.01"
+  date: "2026-10-05"
   auteur:
     nom: "Mohamed El Amine Tiour"
     email: "Mohamedtiour@gmail.com"

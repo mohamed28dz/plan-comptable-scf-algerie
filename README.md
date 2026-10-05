@@ -1,85 +1,111 @@
-# Plan Comptable SCF (Système Comptable Financier)
+# Plan comptable SCF algérien
 
-Ce dépôt contient le Plan Comptable SCF (Système Comptable Financier), mis à disposition dans des formats de données structurés et lisibles par machine. Il est conçu pour être facilement intégré dans des applications logicielles, des scripts d'analyse financière ou des bases de données.
+Plan bilingue français/arabe du Système Comptable Financier algérien, distribué en JSON et YAML. Les deux fichiers décrivent les mêmes données et utilisent les mêmes noms de variables.
 
-## 📂 Contenu du dépôt
+- Version : `1.01`
+- Date : `2026-10-05`
 
-*   **`plan_comptable_scf.json`** : Le plan comptable complet au format JSON. Idéal pour les applications web et les API.
-*   **`plan_comptable_scf.yaml`** : Le plan comptable complet au format YAML. Idéal pour les fichiers de configuration et une lecture humaine facilitée.
-*   **`LICENSE`** : Les termes de la licence sous laquelle ce projet est distribué.
-*   **`README.md`** : Ce fichier de documentation.
+## Fichiers
 
-## 🏗️ Structure des données
+- `plan_comptable_scf.json` : format adapté aux applications et aux API.
+- `plan_comptable_scf.yaml` : format lisible et facile à modifier.
+- `LICENSE` : licence du projet.
 
-*(Note : Adaptez cette section selon la structure réelle de vos fichiers)*
+## Structure et variables
 
-Les fichiers contiennent une liste d'objets représentant les comptes. Voici un exemple de la structure attendue :
+Les deux formats ont la même structure. Les codes de classe et de compte sont des entiers (`code`) ; leurs intitulés français et arabes restent dans les champs `titre`, `titre_ar`, `libelle` et `label_ar`.
+
+| Niveau | Variable | Type | Description |
+| --- | --- | --- | --- |
+| Racine | `metadata` | objet | Informations sur le plan et sa version. |
+| Racine | `classes` | liste | Classes comptables du plan. |
+| Métadonnées | `titre` | texte | Nom du plan comptable. |
+| Métadonnées | `reference_legale` | texte | Référence réglementaire indiquée par le document. |
+| Métadonnées | `autorite` | texte | Autorité associée à la référence. |
+| Métadonnées | `devise` | texte | Devise indiquée. |
+| Métadonnées | `version` | texte | Version du fichier, au format `majeure.mineure`. |
+| Métadonnées | `date` | texte | Date de version au format ISO `AAAA-MM-JJ`. |
+| Métadonnées | `auteur` | objet | Informations d'auteur : `nom`, `email`, `mobile`. |
+| Classe | `code` | entier | Numéro de classe. |
+| Classe | `titre`, `titre_ar` | texte | Intitulés français et arabe de la classe. |
+| Classe | `comptes` | liste | Comptes de la classe. |
+| Compte | `code` | entier | Code du compte. |
+| Compte | `libelle`, `label_ar` | texte | Intitulés français et arabe. |
+| Compte | `sous_comptes` | liste | Sous-comptes, avec les mêmes champs de libellé. |
+| Compte | `disponible` | booléen | Présent et `true` lorsqu'un numéro est disponible. Champ facultatif. |
 
 ### Exemple JSON
+
 ```json
-[
-  {
-    "code": "101",
-    "libelle": "Capital social",
-    "classe": "1",
-    "type": "Passif"
+{
+  "metadata": {
+    "titre": "Plan Comptable SCF Algérien",
+    "version": "1.01",
+    "date": "2026-10-05"
   },
-  {
-    "code": "512",
-    "libelle": "Banque",
-    "classe": "5",
-    "type": "Actif"
-  }
-]
+  "classes": [
+    {
+      "code": 1,
+      "titre": "Comptes de capitaux",
+      "titre_ar": "حسابات رؤوس الأموال",
+      "comptes": [
+        {
+          "code": 10,
+          "libelle": "Capital, réserves et assimilées",
+          "label_ar": "رأس المال، الاحتياطات وما يماثلها",
+          "sous_comptes": [
+            {
+              "code": 101,
+              "libelle": "Capital émis",
+              "label_ar": "رأس المال الاجتماعي الصادر"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
 ```
 
-Exemple YAML
+### Exemple YAML
 
 ```yaml
-- code: "101"
-  libelle: "Capital social"
-  classe: "1"
-  type: "Passif"
-- code: "512"
-  libelle: "Banque"
-  classe: "5"
-  type: "Actif"
+metadata:
+  titre: "Plan Comptable SCF Algérien"
+  version: "1.01"
+  date: "2026-10-05"
+
+classes:
+  - code: 1
+    titre: "Comptes de capitaux"
+    titre_ar: "حسابات رؤوس الأموال"
+    comptes:
+      - code: 10
+        libelle: "Capital, réserves et assimilées"
+        label_ar: "رأس المال، الاحتياطات وما يماثلها"
+        sous_comptes:
+          - code: 101
+            libelle: "Capital émis"
+            label_ar: "رأس المال الاجتماعي الصادر"
 ```
 
-🚀 Utilisation
-
-Ces fichiers peuvent être utilisés pour :
-
-· Alimenter des logiciels de comptabilité ou de gestion financière.
-· Créer des validateurs de saisie comptable.
-· Effectuer des analyses de données et des rapports automatisés.
-· Servir de référence pour des projets de développement (Python, JavaScript, Java, etc.).
-
-Exemple rapide en Python (JSON) :
+## Utilisation en Python
 
 ```python
 import json
 
-with open('plan_comptable_scf.json', 'r', encoding='utf-8') as f:
-    plan_comptable = json.load(f)
+with open("plan_comptable_scf.json", encoding="utf-8") as fichier:
+    plan = json.load(fichier)
 
-for compte in plan_comptable:
-    print(f"{compte['code']} - {compte['libelle']}")
+for classe in plan["classes"]:
+    for compte in classe["comptes"]:
+        print(f"{compte['code']} - {compte['libelle']}")
+        for sous_compte in compte["sous_comptes"]:
+            print(f"  {sous_compte['code']} - {sous_compte['libelle']}")
 ```
 
-🤝 Contribution
+## Licence
 
-Les contributions sont les bienvenues ! Si vous souhaitez corriger une erreur, ajouter des comptes manquants ou améliorer la structure des fichiers :
-
-1. Forkez le projet.
-2. Créez une branche pour votre modification (git checkout -b amelioration/plan-comptable).
-3. Committez vos changements (git commit -m 'Ajout de nouveaux comptes').
-4. Pushez la branche (git push origin amelioration/plan-comptable).
-5. Ouvrez une Pull Request.
-
-📄 Licence
-
-Ce projet est sous licence MIT. 
-Veuillez consulter le fichier LICENSE pour plus de détails.
+Ce projet est distribué sous licence MIT. Consultez le fichier `LICENSE` pour les conditions applicables.
 
 
